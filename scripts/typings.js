@@ -23,8 +23,20 @@ function interfaceName (component) {
   //
   // Replace '.'s with '_'s and CamelCase.
   //
-  return component.splits
-    .map(split => split.replace(/\./g, '_').replace(/./, first => first.toUpperCase()))
+  return component.splits.map(cleanName).join('')
+}
+
+function cleanName (name) {
+  if (!name) {
+    return ''
+  }
+
+  return name
+    .replace(/\./g, ' ')
+    .replace(/-/g, ' ')
+    .trim()
+    .split(' ')
+    .map(v => v.replace(/./, first => first.toUpperCase()))
     .join('')
 }
 

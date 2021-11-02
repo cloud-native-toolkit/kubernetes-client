@@ -1,6 +1,6 @@
 import Api = require('./');
 
-const Client = Api.Client1_13;
+const Client = Api.Client1_22;
 const config = Api.config;
 
 const deploymentManifest = {
