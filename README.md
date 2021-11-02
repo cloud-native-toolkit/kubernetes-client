@@ -143,8 +143,8 @@ API 1.13 and a complimentry `Client1_13` class:
 ```typescript
 import * as ApiClient from 'kubernetes-client';
 
-const Client = ApiClient.Client1_13;
-const client = new Client({ version: '1.13' });
+const Client = ApiClient.Client1_22;
+const client = new Client({ version: '1.22' });
 ```
 
 When using TypeScript, kubernetes-client does not support dynamically

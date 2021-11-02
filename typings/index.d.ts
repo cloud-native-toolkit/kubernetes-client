@@ -2676,7 +2676,7 @@ export interface ApisBatch {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1WatchNamespacesNameLeasesName {
+export interface ApisCoordinationK8sIoV1WatchNamespacesNameLeasesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -2685,9 +2685,9 @@ export interface ApisCoordination_k8s_ioV1WatchNamespacesNameLeasesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1WatchNamespacesNameLeases {
+export interface ApisCoordinationK8sIoV1WatchNamespacesNameLeases {
            // Path templating
-           (name: string): ApisCoordination_k8s_ioV1WatchNamespacesNameLeasesName
+           (name: string): ApisCoordinationK8sIoV1WatchNamespacesNameLeasesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -2695,24 +2695,24 @@ export interface ApisCoordination_k8s_ioV1WatchNamespacesNameLeases {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1WatchNamespacesName {
+export interface ApisCoordinationK8sIoV1WatchNamespacesName {
            // Path templating
            // Sub-paths
-           'leases': ApisCoordination_k8s_ioV1WatchNamespacesNameLeases
-           'lease': ApisCoordination_k8s_ioV1WatchNamespacesNameLeases
+           'leases': ApisCoordinationK8sIoV1WatchNamespacesNameLeases
+           'lease': ApisCoordinationK8sIoV1WatchNamespacesNameLeases
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1WatchNamespaces {
+export interface ApisCoordinationK8sIoV1WatchNamespaces {
            // Path templating
-           (name: string): ApisCoordination_k8s_ioV1WatchNamespacesName
+           (name: string): ApisCoordinationK8sIoV1WatchNamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1WatchLeases {
+export interface ApisCoordinationK8sIoV1WatchLeases {
            // Path templating
            // Sub-paths
            // Calls
@@ -2721,19 +2721,19 @@ export interface ApisCoordination_k8s_ioV1WatchLeases {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1Watch {
+export interface ApisCoordinationK8sIoV1Watch {
            // Path templating
            // Sub-paths
-           'namespaces': ApisCoordination_k8s_ioV1WatchNamespaces
-           'ns': ApisCoordination_k8s_ioV1WatchNamespaces
-           'namespace': ApisCoordination_k8s_ioV1WatchNamespaces
-           'leases': ApisCoordination_k8s_ioV1WatchLeases
-           'lease': ApisCoordination_k8s_ioV1WatchLeases
+           'namespaces': ApisCoordinationK8sIoV1WatchNamespaces
+           'ns': ApisCoordinationK8sIoV1WatchNamespaces
+           'namespace': ApisCoordinationK8sIoV1WatchNamespaces
+           'leases': ApisCoordinationK8sIoV1WatchLeases
+           'lease': ApisCoordinationK8sIoV1WatchLeases
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1NamespacesNameLeasesName {
+export interface ApisCoordinationK8sIoV1NamespacesNameLeasesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -2745,9 +2745,9 @@ export interface ApisCoordination_k8s_ioV1NamespacesNameLeasesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1NamespacesNameLeases {
+export interface ApisCoordinationK8sIoV1NamespacesNameLeases {
            // Path templating
-           (name: string): ApisCoordination_k8s_ioV1NamespacesNameLeasesName
+           (name: string): ApisCoordinationK8sIoV1NamespacesNameLeasesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -2757,58 +2757,24 @@ export interface ApisCoordination_k8s_ioV1NamespacesNameLeases {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1NamespacesName {
+export interface ApisCoordinationK8sIoV1NamespacesName {
            // Path templating
            // Sub-paths
-           'leases': ApisCoordination_k8s_ioV1NamespacesNameLeases
-           'lease': ApisCoordination_k8s_ioV1NamespacesNameLeases
+           'leases': ApisCoordinationK8sIoV1NamespacesNameLeases
+           'lease': ApisCoordinationK8sIoV1NamespacesNameLeases
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1Namespaces {
+export interface ApisCoordinationK8sIoV1Namespaces {
            // Path templating
-           (name: string): ApisCoordination_k8s_ioV1NamespacesName
+           (name: string): ApisCoordinationK8sIoV1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCoordination_k8s_ioV1Leases {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisCoordination_k8s_ioV1 {
-           // Path templating
-           // Sub-paths
-           'watch': ApisCoordination_k8s_ioV1Watch
-           'namespaces': ApisCoordination_k8s_ioV1Namespaces
-           'ns': ApisCoordination_k8s_ioV1Namespaces
-           'namespace': ApisCoordination_k8s_ioV1Namespaces
-           'leases': ApisCoordination_k8s_ioV1Leases
-           'lease': ApisCoordination_k8s_ioV1Leases
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisCoordination_k8s_io {
-           // Path templating
-           // Sub-paths
-           'v1': ApisCoordination_k8s_ioV1
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisDiscovery_k8s_ioV1WatchNamespacesNameEndpointslicesName {
+export interface ApisCoordinationK8sIoV1Leases {
            // Path templating
            // Sub-paths
            // Calls
@@ -2817,9 +2783,33 @@ export interface ApisDiscovery_k8s_ioV1WatchNamespacesNameEndpointslicesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1WatchNamespacesNameEndpointslices {
+export interface ApisCoordinationK8sIoV1 {
            // Path templating
-           (name: string): ApisDiscovery_k8s_ioV1WatchNamespacesNameEndpointslicesName
+           // Sub-paths
+           'watch': ApisCoordinationK8sIoV1Watch
+           'namespaces': ApisCoordinationK8sIoV1Namespaces
+           'ns': ApisCoordinationK8sIoV1Namespaces
+           'namespace': ApisCoordinationK8sIoV1Namespaces
+           'leases': ApisCoordinationK8sIoV1Leases
+           'lease': ApisCoordinationK8sIoV1Leases
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisCoordinationK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1': ApisCoordinationK8sIoV1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisDiscoveryK8sIoV1WatchNamespacesNameEndpointslicesName {
+           // Path templating
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -2827,24 +2817,34 @@ export interface ApisDiscovery_k8s_ioV1WatchNamespacesNameEndpointslices {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1WatchNamespacesName {
+export interface ApisDiscoveryK8sIoV1WatchNamespacesNameEndpointslices {
+           // Path templating
+           (name: string): ApisDiscoveryK8sIoV1WatchNamespacesNameEndpointslicesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisDiscoveryK8sIoV1WatchNamespacesName {
            // Path templating
            // Sub-paths
-           'endpointslices': ApisDiscovery_k8s_ioV1WatchNamespacesNameEndpointslices
-           'endpointslice': ApisDiscovery_k8s_ioV1WatchNamespacesNameEndpointslices
+           'endpointslices': ApisDiscoveryK8sIoV1WatchNamespacesNameEndpointslices
+           'endpointslice': ApisDiscoveryK8sIoV1WatchNamespacesNameEndpointslices
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1WatchNamespaces {
+export interface ApisDiscoveryK8sIoV1WatchNamespaces {
            // Path templating
-           (name: string): ApisDiscovery_k8s_ioV1WatchNamespacesName
+           (name: string): ApisDiscoveryK8sIoV1WatchNamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1WatchEndpointslices {
+export interface ApisDiscoveryK8sIoV1WatchEndpointslices {
            // Path templating
            // Sub-paths
            // Calls
@@ -2853,19 +2853,19 @@ export interface ApisDiscovery_k8s_ioV1WatchEndpointslices {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1Watch {
+export interface ApisDiscoveryK8sIoV1Watch {
            // Path templating
            // Sub-paths
-           'namespaces': ApisDiscovery_k8s_ioV1WatchNamespaces
-           'ns': ApisDiscovery_k8s_ioV1WatchNamespaces
-           'namespace': ApisDiscovery_k8s_ioV1WatchNamespaces
-           'endpointslices': ApisDiscovery_k8s_ioV1WatchEndpointslices
-           'endpointslice': ApisDiscovery_k8s_ioV1WatchEndpointslices
+           'namespaces': ApisDiscoveryK8sIoV1WatchNamespaces
+           'ns': ApisDiscoveryK8sIoV1WatchNamespaces
+           'namespace': ApisDiscoveryK8sIoV1WatchNamespaces
+           'endpointslices': ApisDiscoveryK8sIoV1WatchEndpointslices
+           'endpointslice': ApisDiscoveryK8sIoV1WatchEndpointslices
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1NamespacesNameEndpointslicesName {
+export interface ApisDiscoveryK8sIoV1NamespacesNameEndpointslicesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -2877,9 +2877,9 @@ export interface ApisDiscovery_k8s_ioV1NamespacesNameEndpointslicesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1NamespacesNameEndpointslices {
+export interface ApisDiscoveryK8sIoV1NamespacesNameEndpointslices {
            // Path templating
-           (name: string): ApisDiscovery_k8s_ioV1NamespacesNameEndpointslicesName
+           (name: string): ApisDiscoveryK8sIoV1NamespacesNameEndpointslicesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -2889,48 +2889,24 @@ export interface ApisDiscovery_k8s_ioV1NamespacesNameEndpointslices {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1NamespacesName {
+export interface ApisDiscoveryK8sIoV1NamespacesName {
            // Path templating
            // Sub-paths
-           'endpointslices': ApisDiscovery_k8s_ioV1NamespacesNameEndpointslices
-           'endpointslice': ApisDiscovery_k8s_ioV1NamespacesNameEndpointslices
+           'endpointslices': ApisDiscoveryK8sIoV1NamespacesNameEndpointslices
+           'endpointslice': ApisDiscoveryK8sIoV1NamespacesNameEndpointslices
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1Namespaces {
+export interface ApisDiscoveryK8sIoV1Namespaces {
            // Path templating
-           (name: string): ApisDiscovery_k8s_ioV1NamespacesName
+           (name: string): ApisDiscoveryK8sIoV1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1Endpointslices {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisDiscovery_k8s_ioV1 {
-           // Path templating
-           // Sub-paths
-           'watch': ApisDiscovery_k8s_ioV1Watch
-           'namespaces': ApisDiscovery_k8s_ioV1Namespaces
-           'ns': ApisDiscovery_k8s_ioV1Namespaces
-           'namespace': ApisDiscovery_k8s_ioV1Namespaces
-           'endpointslices': ApisDiscovery_k8s_ioV1Endpointslices
-           'endpointslice': ApisDiscovery_k8s_ioV1Endpointslices
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisDiscovery_k8s_ioV1beta1WatchNamespacesNameEndpointslicesName {
+export interface ApisDiscoveryK8sIoV1Endpointslices {
            // Path templating
            // Sub-paths
            // Calls
@@ -2939,34 +2915,22 @@ export interface ApisDiscovery_k8s_ioV1beta1WatchNamespacesNameEndpointslicesNam
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1beta1WatchNamespacesNameEndpointslices {
+export interface ApisDiscoveryK8sIoV1 {
            // Path templating
-           (name: string): ApisDiscovery_k8s_ioV1beta1WatchNamespacesNameEndpointslicesName
            // Sub-paths
+           'watch': ApisDiscoveryK8sIoV1Watch
+           'namespaces': ApisDiscoveryK8sIoV1Namespaces
+           'ns': ApisDiscoveryK8sIoV1Namespaces
+           'namespace': ApisDiscoveryK8sIoV1Namespaces
+           'endpointslices': ApisDiscoveryK8sIoV1Endpointslices
+           'endpointslice': ApisDiscoveryK8sIoV1Endpointslices
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1beta1WatchNamespacesName {
-           // Path templating
-           // Sub-paths
-           'endpointslices': ApisDiscovery_k8s_ioV1beta1WatchNamespacesNameEndpointslices
-           'endpointslice': ApisDiscovery_k8s_ioV1beta1WatchNamespacesNameEndpointslices
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisDiscovery_k8s_ioV1beta1WatchNamespaces {
-           // Path templating
-           (name: string): ApisDiscovery_k8s_ioV1beta1WatchNamespacesName
-           // Sub-paths
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisDiscovery_k8s_ioV1beta1WatchEndpointslices {
+export interface ApisDiscoveryK8sIoV1beta1WatchNamespacesNameEndpointslicesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -2975,19 +2939,55 @@ export interface ApisDiscovery_k8s_ioV1beta1WatchEndpointslices {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1beta1Watch {
+export interface ApisDiscoveryK8sIoV1beta1WatchNamespacesNameEndpointslices {
+           // Path templating
+           (name: string): ApisDiscoveryK8sIoV1beta1WatchNamespacesNameEndpointslicesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisDiscoveryK8sIoV1beta1WatchNamespacesName {
            // Path templating
            // Sub-paths
-           'namespaces': ApisDiscovery_k8s_ioV1beta1WatchNamespaces
-           'ns': ApisDiscovery_k8s_ioV1beta1WatchNamespaces
-           'namespace': ApisDiscovery_k8s_ioV1beta1WatchNamespaces
-           'endpointslices': ApisDiscovery_k8s_ioV1beta1WatchEndpointslices
-           'endpointslice': ApisDiscovery_k8s_ioV1beta1WatchEndpointslices
+           'endpointslices': ApisDiscoveryK8sIoV1beta1WatchNamespacesNameEndpointslices
+           'endpointslice': ApisDiscoveryK8sIoV1beta1WatchNamespacesNameEndpointslices
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1beta1NamespacesNameEndpointslicesName {
+export interface ApisDiscoveryK8sIoV1beta1WatchNamespaces {
+           // Path templating
+           (name: string): ApisDiscoveryK8sIoV1beta1WatchNamespacesName
+           // Sub-paths
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisDiscoveryK8sIoV1beta1WatchEndpointslices {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisDiscoveryK8sIoV1beta1Watch {
+           // Path templating
+           // Sub-paths
+           'namespaces': ApisDiscoveryK8sIoV1beta1WatchNamespaces
+           'ns': ApisDiscoveryK8sIoV1beta1WatchNamespaces
+           'namespace': ApisDiscoveryK8sIoV1beta1WatchNamespaces
+           'endpointslices': ApisDiscoveryK8sIoV1beta1WatchEndpointslices
+           'endpointslice': ApisDiscoveryK8sIoV1beta1WatchEndpointslices
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisDiscoveryK8sIoV1beta1NamespacesNameEndpointslicesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -2999,9 +2999,9 @@ export interface ApisDiscovery_k8s_ioV1beta1NamespacesNameEndpointslicesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1beta1NamespacesNameEndpointslices {
+export interface ApisDiscoveryK8sIoV1beta1NamespacesNameEndpointslices {
            // Path templating
-           (name: string): ApisDiscovery_k8s_ioV1beta1NamespacesNameEndpointslicesName
+           (name: string): ApisDiscoveryK8sIoV1beta1NamespacesNameEndpointslicesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3011,59 +3011,24 @@ export interface ApisDiscovery_k8s_ioV1beta1NamespacesNameEndpointslices {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1beta1NamespacesName {
+export interface ApisDiscoveryK8sIoV1beta1NamespacesName {
            // Path templating
            // Sub-paths
-           'endpointslices': ApisDiscovery_k8s_ioV1beta1NamespacesNameEndpointslices
-           'endpointslice': ApisDiscovery_k8s_ioV1beta1NamespacesNameEndpointslices
+           'endpointslices': ApisDiscoveryK8sIoV1beta1NamespacesNameEndpointslices
+           'endpointslice': ApisDiscoveryK8sIoV1beta1NamespacesNameEndpointslices
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1beta1Namespaces {
+export interface ApisDiscoveryK8sIoV1beta1Namespaces {
            // Path templating
-           (name: string): ApisDiscovery_k8s_ioV1beta1NamespacesName
+           (name: string): ApisDiscoveryK8sIoV1beta1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisDiscovery_k8s_ioV1beta1Endpointslices {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisDiscovery_k8s_ioV1beta1 {
-           // Path templating
-           // Sub-paths
-           'watch': ApisDiscovery_k8s_ioV1beta1Watch
-           'namespaces': ApisDiscovery_k8s_ioV1beta1Namespaces
-           'ns': ApisDiscovery_k8s_ioV1beta1Namespaces
-           'namespace': ApisDiscovery_k8s_ioV1beta1Namespaces
-           'endpointslices': ApisDiscovery_k8s_ioV1beta1Endpointslices
-           'endpointslice': ApisDiscovery_k8s_ioV1beta1Endpointslices
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisDiscovery_k8s_io {
-           // Path templating
-           // Sub-paths
-           'v1': ApisDiscovery_k8s_ioV1
-           'v1beta1': ApisDiscovery_k8s_ioV1beta1
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisEvents_k8s_ioV1WatchNamespacesNameEventsName {
+export interface ApisDiscoveryK8sIoV1beta1Endpointslices {
            // Path templating
            // Sub-paths
            // Calls
@@ -3072,9 +3037,34 @@ export interface ApisEvents_k8s_ioV1WatchNamespacesNameEventsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1WatchNamespacesNameEvents {
+export interface ApisDiscoveryK8sIoV1beta1 {
            // Path templating
-           (name: string): ApisEvents_k8s_ioV1WatchNamespacesNameEventsName
+           // Sub-paths
+           'watch': ApisDiscoveryK8sIoV1beta1Watch
+           'namespaces': ApisDiscoveryK8sIoV1beta1Namespaces
+           'ns': ApisDiscoveryK8sIoV1beta1Namespaces
+           'namespace': ApisDiscoveryK8sIoV1beta1Namespaces
+           'endpointslices': ApisDiscoveryK8sIoV1beta1Endpointslices
+           'endpointslice': ApisDiscoveryK8sIoV1beta1Endpointslices
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisDiscoveryK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1': ApisDiscoveryK8sIoV1
+           'v1beta1': ApisDiscoveryK8sIoV1beta1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisEventsK8sIoV1WatchNamespacesNameEventsName {
+           // Path templating
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3082,25 +3072,35 @@ export interface ApisEvents_k8s_ioV1WatchNamespacesNameEvents {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1WatchNamespacesName {
+export interface ApisEventsK8sIoV1WatchNamespacesNameEvents {
+           // Path templating
+           (name: string): ApisEventsK8sIoV1WatchNamespacesNameEventsName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisEventsK8sIoV1WatchNamespacesName {
            // Path templating
            // Sub-paths
-           'events': ApisEvents_k8s_ioV1WatchNamespacesNameEvents
-           'ev': ApisEvents_k8s_ioV1WatchNamespacesNameEvents
-           'event': ApisEvents_k8s_ioV1WatchNamespacesNameEvents
+           'events': ApisEventsK8sIoV1WatchNamespacesNameEvents
+           'ev': ApisEventsK8sIoV1WatchNamespacesNameEvents
+           'event': ApisEventsK8sIoV1WatchNamespacesNameEvents
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1WatchNamespaces {
+export interface ApisEventsK8sIoV1WatchNamespaces {
            // Path templating
-           (name: string): ApisEvents_k8s_ioV1WatchNamespacesName
+           (name: string): ApisEventsK8sIoV1WatchNamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1WatchEvents {
+export interface ApisEventsK8sIoV1WatchEvents {
            // Path templating
            // Sub-paths
            // Calls
@@ -3109,20 +3109,20 @@ export interface ApisEvents_k8s_ioV1WatchEvents {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1Watch {
+export interface ApisEventsK8sIoV1Watch {
            // Path templating
            // Sub-paths
-           'namespaces': ApisEvents_k8s_ioV1WatchNamespaces
-           'ns': ApisEvents_k8s_ioV1WatchNamespaces
-           'namespace': ApisEvents_k8s_ioV1WatchNamespaces
-           'events': ApisEvents_k8s_ioV1WatchEvents
-           'ev': ApisEvents_k8s_ioV1WatchEvents
-           'event': ApisEvents_k8s_ioV1WatchEvents
+           'namespaces': ApisEventsK8sIoV1WatchNamespaces
+           'ns': ApisEventsK8sIoV1WatchNamespaces
+           'namespace': ApisEventsK8sIoV1WatchNamespaces
+           'events': ApisEventsK8sIoV1WatchEvents
+           'ev': ApisEventsK8sIoV1WatchEvents
+           'event': ApisEventsK8sIoV1WatchEvents
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1NamespacesNameEventsName {
+export interface ApisEventsK8sIoV1NamespacesNameEventsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3134,9 +3134,9 @@ export interface ApisEvents_k8s_ioV1NamespacesNameEventsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1NamespacesNameEvents {
+export interface ApisEventsK8sIoV1NamespacesNameEvents {
            // Path templating
-           (name: string): ApisEvents_k8s_ioV1NamespacesNameEventsName
+           (name: string): ApisEventsK8sIoV1NamespacesNameEventsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3146,50 +3146,25 @@ export interface ApisEvents_k8s_ioV1NamespacesNameEvents {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1NamespacesName {
+export interface ApisEventsK8sIoV1NamespacesName {
            // Path templating
            // Sub-paths
-           'events': ApisEvents_k8s_ioV1NamespacesNameEvents
-           'ev': ApisEvents_k8s_ioV1NamespacesNameEvents
-           'event': ApisEvents_k8s_ioV1NamespacesNameEvents
+           'events': ApisEventsK8sIoV1NamespacesNameEvents
+           'ev': ApisEventsK8sIoV1NamespacesNameEvents
+           'event': ApisEventsK8sIoV1NamespacesNameEvents
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1Namespaces {
+export interface ApisEventsK8sIoV1Namespaces {
            // Path templating
-           (name: string): ApisEvents_k8s_ioV1NamespacesName
+           (name: string): ApisEventsK8sIoV1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1Events {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisEvents_k8s_ioV1 {
-           // Path templating
-           // Sub-paths
-           'watch': ApisEvents_k8s_ioV1Watch
-           'namespaces': ApisEvents_k8s_ioV1Namespaces
-           'ns': ApisEvents_k8s_ioV1Namespaces
-           'namespace': ApisEvents_k8s_ioV1Namespaces
-           'events': ApisEvents_k8s_ioV1Events
-           'ev': ApisEvents_k8s_ioV1Events
-           'event': ApisEvents_k8s_ioV1Events
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisEvents_k8s_ioV1beta1WatchNamespacesNameEventsName {
+export interface ApisEventsK8sIoV1Events {
            // Path templating
            // Sub-paths
            // Calls
@@ -3198,35 +3173,23 @@ export interface ApisEvents_k8s_ioV1beta1WatchNamespacesNameEventsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1beta1WatchNamespacesNameEvents {
+export interface ApisEventsK8sIoV1 {
            // Path templating
-           (name: string): ApisEvents_k8s_ioV1beta1WatchNamespacesNameEventsName
            // Sub-paths
+           'watch': ApisEventsK8sIoV1Watch
+           'namespaces': ApisEventsK8sIoV1Namespaces
+           'ns': ApisEventsK8sIoV1Namespaces
+           'namespace': ApisEventsK8sIoV1Namespaces
+           'events': ApisEventsK8sIoV1Events
+           'ev': ApisEventsK8sIoV1Events
+           'event': ApisEventsK8sIoV1Events
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1beta1WatchNamespacesName {
-           // Path templating
-           // Sub-paths
-           'events': ApisEvents_k8s_ioV1beta1WatchNamespacesNameEvents
-           'ev': ApisEvents_k8s_ioV1beta1WatchNamespacesNameEvents
-           'event': ApisEvents_k8s_ioV1beta1WatchNamespacesNameEvents
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisEvents_k8s_ioV1beta1WatchNamespaces {
-           // Path templating
-           (name: string): ApisEvents_k8s_ioV1beta1WatchNamespacesName
-           // Sub-paths
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisEvents_k8s_ioV1beta1WatchEvents {
+export interface ApisEventsK8sIoV1beta1WatchNamespacesNameEventsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3235,20 +3198,57 @@ export interface ApisEvents_k8s_ioV1beta1WatchEvents {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1beta1Watch {
+export interface ApisEventsK8sIoV1beta1WatchNamespacesNameEvents {
+           // Path templating
+           (name: string): ApisEventsK8sIoV1beta1WatchNamespacesNameEventsName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisEventsK8sIoV1beta1WatchNamespacesName {
            // Path templating
            // Sub-paths
-           'namespaces': ApisEvents_k8s_ioV1beta1WatchNamespaces
-           'ns': ApisEvents_k8s_ioV1beta1WatchNamespaces
-           'namespace': ApisEvents_k8s_ioV1beta1WatchNamespaces
-           'events': ApisEvents_k8s_ioV1beta1WatchEvents
-           'ev': ApisEvents_k8s_ioV1beta1WatchEvents
-           'event': ApisEvents_k8s_ioV1beta1WatchEvents
+           'events': ApisEventsK8sIoV1beta1WatchNamespacesNameEvents
+           'ev': ApisEventsK8sIoV1beta1WatchNamespacesNameEvents
+           'event': ApisEventsK8sIoV1beta1WatchNamespacesNameEvents
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1beta1NamespacesNameEventsName {
+export interface ApisEventsK8sIoV1beta1WatchNamespaces {
+           // Path templating
+           (name: string): ApisEventsK8sIoV1beta1WatchNamespacesName
+           // Sub-paths
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisEventsK8sIoV1beta1WatchEvents {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisEventsK8sIoV1beta1Watch {
+           // Path templating
+           // Sub-paths
+           'namespaces': ApisEventsK8sIoV1beta1WatchNamespaces
+           'ns': ApisEventsK8sIoV1beta1WatchNamespaces
+           'namespace': ApisEventsK8sIoV1beta1WatchNamespaces
+           'events': ApisEventsK8sIoV1beta1WatchEvents
+           'ev': ApisEventsK8sIoV1beta1WatchEvents
+           'event': ApisEventsK8sIoV1beta1WatchEvents
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisEventsK8sIoV1beta1NamespacesNameEventsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3260,9 +3260,9 @@ export interface ApisEvents_k8s_ioV1beta1NamespacesNameEventsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1beta1NamespacesNameEvents {
+export interface ApisEventsK8sIoV1beta1NamespacesNameEvents {
            // Path templating
-           (name: string): ApisEvents_k8s_ioV1beta1NamespacesNameEventsName
+           (name: string): ApisEventsK8sIoV1beta1NamespacesNameEventsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3272,61 +3272,61 @@ export interface ApisEvents_k8s_ioV1beta1NamespacesNameEvents {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1beta1NamespacesName {
+export interface ApisEventsK8sIoV1beta1NamespacesName {
            // Path templating
            // Sub-paths
-           'events': ApisEvents_k8s_ioV1beta1NamespacesNameEvents
-           'ev': ApisEvents_k8s_ioV1beta1NamespacesNameEvents
-           'event': ApisEvents_k8s_ioV1beta1NamespacesNameEvents
+           'events': ApisEventsK8sIoV1beta1NamespacesNameEvents
+           'ev': ApisEventsK8sIoV1beta1NamespacesNameEvents
+           'event': ApisEventsK8sIoV1beta1NamespacesNameEvents
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1beta1Namespaces {
+export interface ApisEventsK8sIoV1beta1Namespaces {
            // Path templating
-           (name: string): ApisEvents_k8s_ioV1beta1NamespacesName
+           (name: string): ApisEventsK8sIoV1beta1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_ioV1beta1Events {
+export interface ApisEventsK8sIoV1beta1Events {
            // Path templating
            // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisEvents_k8s_ioV1beta1 {
-           // Path templating
-           // Sub-paths
-           'watch': ApisEvents_k8s_ioV1beta1Watch
-           'namespaces': ApisEvents_k8s_ioV1beta1Namespaces
-           'ns': ApisEvents_k8s_ioV1beta1Namespaces
-           'namespace': ApisEvents_k8s_ioV1beta1Namespaces
-           'events': ApisEvents_k8s_ioV1beta1Events
-           'ev': ApisEvents_k8s_ioV1beta1Events
-           'event': ApisEvents_k8s_ioV1beta1Events
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisEvents_k8s_io {
+export interface ApisEventsK8sIoV1beta1 {
            // Path templating
            // Sub-paths
-           'v1': ApisEvents_k8s_ioV1
-           'v1beta1': ApisEvents_k8s_ioV1beta1
+           'watch': ApisEventsK8sIoV1beta1Watch
+           'namespaces': ApisEventsK8sIoV1beta1Namespaces
+           'ns': ApisEventsK8sIoV1beta1Namespaces
+           'namespace': ApisEventsK8sIoV1beta1Namespaces
+           'events': ApisEventsK8sIoV1beta1Events
+           'ev': ApisEventsK8sIoV1beta1Events
+           'event': ApisEventsK8sIoV1beta1Events
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1NamespacesNameIngressesNameStatus {
+export interface ApisEventsK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1': ApisEventsK8sIoV1
+           'v1beta1': ApisEventsK8sIoV1beta1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNetworkingK8sIoV1NamespacesNameIngressesNameStatus {
            // Path templating
            // Sub-paths
            // Calls
@@ -3337,10 +3337,10 @@ export interface ApisNetworking_k8s_ioV1NamespacesNameIngressesNameStatus {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1NamespacesNameIngressesName {
+export interface ApisNetworkingK8sIoV1NamespacesNameIngressesName {
            // Path templating
            // Sub-paths
-           'status': ApisNetworking_k8s_ioV1NamespacesNameIngressesNameStatus
+           'status': ApisNetworkingK8sIoV1NamespacesNameIngressesNameStatus
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -3350,9 +3350,9 @@ export interface ApisNetworking_k8s_ioV1NamespacesNameIngressesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1NamespacesNameIngresses {
+export interface ApisNetworkingK8sIoV1NamespacesNameIngresses {
            // Path templating
-           (name: string): ApisNetworking_k8s_ioV1NamespacesNameIngressesName
+           (name: string): ApisNetworkingK8sIoV1NamespacesNameIngressesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3362,7 +3362,7 @@ export interface ApisNetworking_k8s_ioV1NamespacesNameIngresses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1NamespacesNameNetworkpoliciesName {
+export interface ApisNetworkingK8sIoV1NamespacesNameNetworkpoliciesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3374,9 +3374,9 @@ export interface ApisNetworking_k8s_ioV1NamespacesNameNetworkpoliciesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1NamespacesNameNetworkpolicies {
+export interface ApisNetworkingK8sIoV1NamespacesNameNetworkpolicies {
            // Path templating
-           (name: string): ApisNetworking_k8s_ioV1NamespacesNameNetworkpoliciesName
+           (name: string): ApisNetworkingK8sIoV1NamespacesNameNetworkpoliciesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3386,46 +3386,27 @@ export interface ApisNetworking_k8s_ioV1NamespacesNameNetworkpolicies {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1NamespacesName {
+export interface ApisNetworkingK8sIoV1NamespacesName {
            // Path templating
            // Sub-paths
-           'ingresses': ApisNetworking_k8s_ioV1NamespacesNameIngresses
-           'ing': ApisNetworking_k8s_ioV1NamespacesNameIngresses
-           'ingress': ApisNetworking_k8s_ioV1NamespacesNameIngresses
-           'networkpolicies': ApisNetworking_k8s_ioV1NamespacesNameNetworkpolicies
-           'networkpolicie': ApisNetworking_k8s_ioV1NamespacesNameNetworkpolicies
+           'ingresses': ApisNetworkingK8sIoV1NamespacesNameIngresses
+           'ing': ApisNetworkingK8sIoV1NamespacesNameIngresses
+           'ingress': ApisNetworkingK8sIoV1NamespacesNameIngresses
+           'networkpolicies': ApisNetworkingK8sIoV1NamespacesNameNetworkpolicies
+           'networkpolicie': ApisNetworkingK8sIoV1NamespacesNameNetworkpolicies
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1Namespaces {
+export interface ApisNetworkingK8sIoV1Namespaces {
            // Path templating
-           (name: string): ApisNetworking_k8s_ioV1NamespacesName
+           (name: string): ApisNetworkingK8sIoV1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1WatchNamespacesNameIngressesName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisNetworking_k8s_ioV1WatchNamespacesNameIngresses {
-           // Path templating
-           (name: string): ApisNetworking_k8s_ioV1WatchNamespacesNameIngressesName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisNetworking_k8s_ioV1WatchNamespacesNameNetworkpoliciesName {
+export interface ApisNetworkingK8sIoV1WatchNamespacesNameIngressesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3434,9 +3415,9 @@ export interface ApisNetworking_k8s_ioV1WatchNamespacesNameNetworkpoliciesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1WatchNamespacesNameNetworkpolicies {
+export interface ApisNetworkingK8sIoV1WatchNamespacesNameIngresses {
            // Path templating
-           (name: string): ApisNetworking_k8s_ioV1WatchNamespacesNameNetworkpoliciesName
+           (name: string): ApisNetworkingK8sIoV1WatchNamespacesNameIngressesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3444,27 +3425,7 @@ export interface ApisNetworking_k8s_ioV1WatchNamespacesNameNetworkpolicies {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1WatchNamespacesName {
-           // Path templating
-           // Sub-paths
-           'ingresses': ApisNetworking_k8s_ioV1WatchNamespacesNameIngresses
-           'ing': ApisNetworking_k8s_ioV1WatchNamespacesNameIngresses
-           'ingress': ApisNetworking_k8s_ioV1WatchNamespacesNameIngresses
-           'networkpolicies': ApisNetworking_k8s_ioV1WatchNamespacesNameNetworkpolicies
-           'networkpolicie': ApisNetworking_k8s_ioV1WatchNamespacesNameNetworkpolicies
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisNetworking_k8s_ioV1WatchNamespaces {
-           // Path templating
-           (name: string): ApisNetworking_k8s_ioV1WatchNamespacesName
-           // Sub-paths
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisNetworking_k8s_ioV1WatchIngressclassesName {
+export interface ApisNetworkingK8sIoV1WatchNamespacesNameNetworkpoliciesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3473,9 +3434,9 @@ export interface ApisNetworking_k8s_ioV1WatchIngressclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1WatchIngressclasses {
+export interface ApisNetworkingK8sIoV1WatchNamespacesNameNetworkpolicies {
            // Path templating
-           (name: string): ApisNetworking_k8s_ioV1WatchIngressclassesName
+           (name: string): ApisNetworkingK8sIoV1WatchNamespacesNameNetworkpoliciesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3483,7 +3444,27 @@ export interface ApisNetworking_k8s_ioV1WatchIngressclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1WatchIngresses {
+export interface ApisNetworkingK8sIoV1WatchNamespacesName {
+           // Path templating
+           // Sub-paths
+           'ingresses': ApisNetworkingK8sIoV1WatchNamespacesNameIngresses
+           'ing': ApisNetworkingK8sIoV1WatchNamespacesNameIngresses
+           'ingress': ApisNetworkingK8sIoV1WatchNamespacesNameIngresses
+           'networkpolicies': ApisNetworkingK8sIoV1WatchNamespacesNameNetworkpolicies
+           'networkpolicie': ApisNetworkingK8sIoV1WatchNamespacesNameNetworkpolicies
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNetworkingK8sIoV1WatchNamespaces {
+           // Path templating
+           (name: string): ApisNetworkingK8sIoV1WatchNamespacesName
+           // Sub-paths
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNetworkingK8sIoV1WatchIngressclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3492,7 +3473,17 @@ export interface ApisNetworking_k8s_ioV1WatchIngresses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1WatchNetworkpolicies {
+export interface ApisNetworkingK8sIoV1WatchIngressclasses {
+           // Path templating
+           (name: string): ApisNetworkingK8sIoV1WatchIngressclassesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNetworkingK8sIoV1WatchIngresses {
            // Path templating
            // Sub-paths
            // Calls
@@ -3501,24 +3492,33 @@ export interface ApisNetworking_k8s_ioV1WatchNetworkpolicies {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1Watch {
+export interface ApisNetworkingK8sIoV1WatchNetworkpolicies {
            // Path templating
            // Sub-paths
-           'namespaces': ApisNetworking_k8s_ioV1WatchNamespaces
-           'ns': ApisNetworking_k8s_ioV1WatchNamespaces
-           'namespace': ApisNetworking_k8s_ioV1WatchNamespaces
-           'ingressclasses': ApisNetworking_k8s_ioV1WatchIngressclasses
-           'ingressclasse': ApisNetworking_k8s_ioV1WatchIngressclasses
-           'ingresses': ApisNetworking_k8s_ioV1WatchIngresses
-           'ing': ApisNetworking_k8s_ioV1WatchIngresses
-           'ingress': ApisNetworking_k8s_ioV1WatchIngresses
-           'networkpolicies': ApisNetworking_k8s_ioV1WatchNetworkpolicies
-           'networkpolicie': ApisNetworking_k8s_ioV1WatchNetworkpolicies
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNetworkingK8sIoV1Watch {
+           // Path templating
+           // Sub-paths
+           'namespaces': ApisNetworkingK8sIoV1WatchNamespaces
+           'ns': ApisNetworkingK8sIoV1WatchNamespaces
+           'namespace': ApisNetworkingK8sIoV1WatchNamespaces
+           'ingressclasses': ApisNetworkingK8sIoV1WatchIngressclasses
+           'ingressclasse': ApisNetworkingK8sIoV1WatchIngressclasses
+           'ingresses': ApisNetworkingK8sIoV1WatchIngresses
+           'ing': ApisNetworkingK8sIoV1WatchIngresses
+           'ingress': ApisNetworkingK8sIoV1WatchIngresses
+           'networkpolicies': ApisNetworkingK8sIoV1WatchNetworkpolicies
+           'networkpolicie': ApisNetworkingK8sIoV1WatchNetworkpolicies
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1IngressclassesName {
+export interface ApisNetworkingK8sIoV1IngressclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3530,9 +3530,9 @@ export interface ApisNetworking_k8s_ioV1IngressclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1Ingressclasses {
+export interface ApisNetworkingK8sIoV1Ingressclasses {
            // Path templating
-           (name: string): ApisNetworking_k8s_ioV1IngressclassesName
+           (name: string): ApisNetworkingK8sIoV1IngressclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3542,7 +3542,7 @@ export interface ApisNetworking_k8s_ioV1Ingressclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1Ingresses {
+export interface ApisNetworkingK8sIoV1Ingresses {
            // Path templating
            // Sub-paths
            // Calls
@@ -3551,7 +3551,7 @@ export interface ApisNetworking_k8s_ioV1Ingresses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1Networkpolicies {
+export interface ApisNetworkingK8sIoV1Networkpolicies {
            // Path templating
            // Sub-paths
            // Calls
@@ -3560,30 +3560,30 @@ export interface ApisNetworking_k8s_ioV1Networkpolicies {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_ioV1 {
+export interface ApisNetworkingK8sIoV1 {
            // Path templating
            // Sub-paths
-           'namespaces': ApisNetworking_k8s_ioV1Namespaces
-           'ns': ApisNetworking_k8s_ioV1Namespaces
-           'namespace': ApisNetworking_k8s_ioV1Namespaces
-           'watch': ApisNetworking_k8s_ioV1Watch
-           'ingressclasses': ApisNetworking_k8s_ioV1Ingressclasses
-           'ingressclasse': ApisNetworking_k8s_ioV1Ingressclasses
-           'ingresses': ApisNetworking_k8s_ioV1Ingresses
-           'ing': ApisNetworking_k8s_ioV1Ingresses
-           'ingress': ApisNetworking_k8s_ioV1Ingresses
-           'networkpolicies': ApisNetworking_k8s_ioV1Networkpolicies
-           'networkpolicie': ApisNetworking_k8s_ioV1Networkpolicies
+           'namespaces': ApisNetworkingK8sIoV1Namespaces
+           'ns': ApisNetworkingK8sIoV1Namespaces
+           'namespace': ApisNetworkingK8sIoV1Namespaces
+           'watch': ApisNetworkingK8sIoV1Watch
+           'ingressclasses': ApisNetworkingK8sIoV1Ingressclasses
+           'ingressclasse': ApisNetworkingK8sIoV1Ingressclasses
+           'ingresses': ApisNetworkingK8sIoV1Ingresses
+           'ing': ApisNetworkingK8sIoV1Ingresses
+           'ingress': ApisNetworkingK8sIoV1Ingresses
+           'networkpolicies': ApisNetworkingK8sIoV1Networkpolicies
+           'networkpolicie': ApisNetworkingK8sIoV1Networkpolicies
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNetworking_k8s_io {
+export interface ApisNetworkingK8sIo {
            // Path templating
            // Sub-paths
-           'v1': ApisNetworking_k8s_ioV1
+           'v1': ApisNetworkingK8sIoV1
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -3916,7 +3916,7 @@ export interface ApisPolicy {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolebindingsName {
+export interface ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRolebindingsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3925,9 +3925,9 @@ export interface ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolebindingsN
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolebindings {
+export interface ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRolebindings {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolebindingsName
+           (name: string): ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRolebindingsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3935,45 +3935,7 @@ export interface ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolebindings 
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolesName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRoles {
-           // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolesName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1WatchNamespacesName {
-           // Path templating
-           // Sub-paths
-           'rolebindings': ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolebindings
-           'rolebinding': ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRolebindings
-           'roles': ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRoles
-           'role': ApisRbac_authorization_k8s_ioV1WatchNamespacesNameRoles
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1WatchNamespaces {
-           // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1WatchNamespacesName
-           // Sub-paths
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1WatchClusterrolebindingsName {
+export interface ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRolesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -3982,9 +3944,9 @@ export interface ApisRbac_authorization_k8s_ioV1WatchClusterrolebindingsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1WatchClusterrolebindings {
+export interface ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRoles {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1WatchClusterrolebindingsName
+           (name: string): ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRolesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -3992,35 +3954,26 @@ export interface ApisRbac_authorization_k8s_ioV1WatchClusterrolebindings {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1WatchClusterrolesName {
+export interface ApisRbacAuthorizationK8sIoV1WatchNamespacesName {
            // Path templating
            // Sub-paths
+           'rolebindings': ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRolebindings
+           'rolebinding': ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRolebindings
+           'roles': ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRoles
+           'role': ApisRbacAuthorizationK8sIoV1WatchNamespacesNameRoles
            // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1WatchClusterroles {
+export interface ApisRbacAuthorizationK8sIoV1WatchNamespaces {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1WatchClusterrolesName
+           (name: string): ApisRbacAuthorizationK8sIoV1WatchNamespacesName
            // Sub-paths
            // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1WatchRolebindings {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1WatchRoles {
+export interface ApisRbacAuthorizationK8sIoV1WatchClusterrolebindingsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4029,25 +3982,72 @@ export interface ApisRbac_authorization_k8s_ioV1WatchRoles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1Watch {
+export interface ApisRbacAuthorizationK8sIoV1WatchClusterrolebindings {
+           // Path templating
+           (name: string): ApisRbacAuthorizationK8sIoV1WatchClusterrolebindingsName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1WatchClusterrolesName {
            // Path templating
            // Sub-paths
-           'namespaces': ApisRbac_authorization_k8s_ioV1WatchNamespaces
-           'ns': ApisRbac_authorization_k8s_ioV1WatchNamespaces
-           'namespace': ApisRbac_authorization_k8s_ioV1WatchNamespaces
-           'clusterrolebindings': ApisRbac_authorization_k8s_ioV1WatchClusterrolebindings
-           'clusterrolebinding': ApisRbac_authorization_k8s_ioV1WatchClusterrolebindings
-           'clusterroles': ApisRbac_authorization_k8s_ioV1WatchClusterroles
-           'clusterrole': ApisRbac_authorization_k8s_ioV1WatchClusterroles
-           'rolebindings': ApisRbac_authorization_k8s_ioV1WatchRolebindings
-           'rolebinding': ApisRbac_authorization_k8s_ioV1WatchRolebindings
-           'roles': ApisRbac_authorization_k8s_ioV1WatchRoles
-           'role': ApisRbac_authorization_k8s_ioV1WatchRoles
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1WatchClusterroles {
+           // Path templating
+           (name: string): ApisRbacAuthorizationK8sIoV1WatchClusterrolesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1WatchRolebindings {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1WatchRoles {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1Watch {
+           // Path templating
+           // Sub-paths
+           'namespaces': ApisRbacAuthorizationK8sIoV1WatchNamespaces
+           'ns': ApisRbacAuthorizationK8sIoV1WatchNamespaces
+           'namespace': ApisRbacAuthorizationK8sIoV1WatchNamespaces
+           'clusterrolebindings': ApisRbacAuthorizationK8sIoV1WatchClusterrolebindings
+           'clusterrolebinding': ApisRbacAuthorizationK8sIoV1WatchClusterrolebindings
+           'clusterroles': ApisRbacAuthorizationK8sIoV1WatchClusterroles
+           'clusterrole': ApisRbacAuthorizationK8sIoV1WatchClusterroles
+           'rolebindings': ApisRbacAuthorizationK8sIoV1WatchRolebindings
+           'rolebinding': ApisRbacAuthorizationK8sIoV1WatchRolebindings
+           'roles': ApisRbacAuthorizationK8sIoV1WatchRoles
+           'role': ApisRbacAuthorizationK8sIoV1WatchRoles
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1NamespacesNameRolebindingsName {
+export interface ApisRbacAuthorizationK8sIoV1NamespacesNameRolebindingsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4059,9 +4059,9 @@ export interface ApisRbac_authorization_k8s_ioV1NamespacesNameRolebindingsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1NamespacesNameRolebindings {
+export interface ApisRbacAuthorizationK8sIoV1NamespacesNameRolebindings {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1NamespacesNameRolebindingsName
+           (name: string): ApisRbacAuthorizationK8sIoV1NamespacesNameRolebindingsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4071,7 +4071,7 @@ export interface ApisRbac_authorization_k8s_ioV1NamespacesNameRolebindings {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1NamespacesNameRolesName {
+export interface ApisRbacAuthorizationK8sIoV1NamespacesNameRolesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4083,9 +4083,9 @@ export interface ApisRbac_authorization_k8s_ioV1NamespacesNameRolesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1NamespacesNameRoles {
+export interface ApisRbacAuthorizationK8sIoV1NamespacesNameRoles {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1NamespacesNameRolesName
+           (name: string): ApisRbacAuthorizationK8sIoV1NamespacesNameRolesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4095,26 +4095,26 @@ export interface ApisRbac_authorization_k8s_ioV1NamespacesNameRoles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1NamespacesName {
+export interface ApisRbacAuthorizationK8sIoV1NamespacesName {
            // Path templating
            // Sub-paths
-           'rolebindings': ApisRbac_authorization_k8s_ioV1NamespacesNameRolebindings
-           'rolebinding': ApisRbac_authorization_k8s_ioV1NamespacesNameRolebindings
-           'roles': ApisRbac_authorization_k8s_ioV1NamespacesNameRoles
-           'role': ApisRbac_authorization_k8s_ioV1NamespacesNameRoles
+           'rolebindings': ApisRbacAuthorizationK8sIoV1NamespacesNameRolebindings
+           'rolebinding': ApisRbacAuthorizationK8sIoV1NamespacesNameRolebindings
+           'roles': ApisRbacAuthorizationK8sIoV1NamespacesNameRoles
+           'role': ApisRbacAuthorizationK8sIoV1NamespacesNameRoles
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1Namespaces {
+export interface ApisRbacAuthorizationK8sIoV1Namespaces {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1NamespacesName
+           (name: string): ApisRbacAuthorizationK8sIoV1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1ClusterrolebindingsName {
+export interface ApisRbacAuthorizationK8sIoV1ClusterrolebindingsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4126,9 +4126,9 @@ export interface ApisRbac_authorization_k8s_ioV1ClusterrolebindingsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1Clusterrolebindings {
+export interface ApisRbacAuthorizationK8sIoV1Clusterrolebindings {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1ClusterrolebindingsName
+           (name: string): ApisRbacAuthorizationK8sIoV1ClusterrolebindingsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4138,7 +4138,7 @@ export interface ApisRbac_authorization_k8s_ioV1Clusterrolebindings {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1ClusterrolesName {
+export interface ApisRbacAuthorizationK8sIoV1ClusterrolesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4150,9 +4150,9 @@ export interface ApisRbac_authorization_k8s_ioV1ClusterrolesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1Clusterroles {
+export interface ApisRbacAuthorizationK8sIoV1Clusterroles {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1ClusterrolesName
+           (name: string): ApisRbacAuthorizationK8sIoV1ClusterrolesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4162,7 +4162,7 @@ export interface ApisRbac_authorization_k8s_ioV1Clusterroles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1Rolebindings {
+export interface ApisRbacAuthorizationK8sIoV1Rolebindings {
            // Path templating
            // Sub-paths
            // Calls
@@ -4171,7 +4171,7 @@ export interface ApisRbac_authorization_k8s_ioV1Rolebindings {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1Roles {
+export interface ApisRbacAuthorizationK8sIoV1Roles {
            // Path templating
            // Sub-paths
            // Calls
@@ -4180,47 +4180,28 @@ export interface ApisRbac_authorization_k8s_ioV1Roles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1 {
+export interface ApisRbacAuthorizationK8sIoV1 {
            // Path templating
            // Sub-paths
-           'watch': ApisRbac_authorization_k8s_ioV1Watch
-           'namespaces': ApisRbac_authorization_k8s_ioV1Namespaces
-           'ns': ApisRbac_authorization_k8s_ioV1Namespaces
-           'namespace': ApisRbac_authorization_k8s_ioV1Namespaces
-           'clusterrolebindings': ApisRbac_authorization_k8s_ioV1Clusterrolebindings
-           'clusterrolebinding': ApisRbac_authorization_k8s_ioV1Clusterrolebindings
-           'clusterroles': ApisRbac_authorization_k8s_ioV1Clusterroles
-           'clusterrole': ApisRbac_authorization_k8s_ioV1Clusterroles
-           'rolebindings': ApisRbac_authorization_k8s_ioV1Rolebindings
-           'rolebinding': ApisRbac_authorization_k8s_ioV1Rolebindings
-           'roles': ApisRbac_authorization_k8s_ioV1Roles
-           'role': ApisRbac_authorization_k8s_ioV1Roles
+           'watch': ApisRbacAuthorizationK8sIoV1Watch
+           'namespaces': ApisRbacAuthorizationK8sIoV1Namespaces
+           'ns': ApisRbacAuthorizationK8sIoV1Namespaces
+           'namespace': ApisRbacAuthorizationK8sIoV1Namespaces
+           'clusterrolebindings': ApisRbacAuthorizationK8sIoV1Clusterrolebindings
+           'clusterrolebinding': ApisRbacAuthorizationK8sIoV1Clusterrolebindings
+           'clusterroles': ApisRbacAuthorizationK8sIoV1Clusterroles
+           'clusterrole': ApisRbacAuthorizationK8sIoV1Clusterroles
+           'rolebindings': ApisRbacAuthorizationK8sIoV1Rolebindings
+           'rolebinding': ApisRbacAuthorizationK8sIoV1Rolebindings
+           'roles': ApisRbacAuthorizationK8sIoV1Roles
+           'role': ApisRbacAuthorizationK8sIoV1Roles
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRolebindingsName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRolebindings {
-           // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRolebindingsName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRolesName {
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRolebindingsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4229,9 +4210,9 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRolesNa
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRoles {
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRolebindings {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRolesName
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRolebindingsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4239,26 +4220,7 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRoles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesName {
-           // Path templating
-           // Sub-paths
-           'rolebindings': ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRolebindings
-           'rolebinding': ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRolebindings
-           'roles': ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRoles
-           'role': ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesNameRoles
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchNamespaces {
-           // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1WatchNamespacesName
-           // Sub-paths
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolebindingsName {
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRolesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4267,9 +4229,9 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolebindingsNa
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolebindings {
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRoles {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolebindingsName
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRolesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4277,35 +4239,26 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolebindings {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolesName {
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesName {
            // Path templating
            // Sub-paths
+           'rolebindings': ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRolebindings
+           'rolebinding': ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRolebindings
+           'roles': ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRoles
+           'role': ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesNameRoles
            // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchClusterroles {
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchNamespaces {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolesName
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1WatchNamespacesName
            // Sub-paths
            // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchRolebindings {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisRbac_authorization_k8s_ioV1alpha1WatchRoles {
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchClusterrolebindingsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4314,25 +4267,72 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1WatchRoles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1Watch {
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchClusterrolebindings {
+           // Path templating
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1WatchClusterrolebindingsName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchClusterrolesName {
            // Path templating
            // Sub-paths
-           'namespaces': ApisRbac_authorization_k8s_ioV1alpha1WatchNamespaces
-           'ns': ApisRbac_authorization_k8s_ioV1alpha1WatchNamespaces
-           'namespace': ApisRbac_authorization_k8s_ioV1alpha1WatchNamespaces
-           'clusterrolebindings': ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolebindings
-           'clusterrolebinding': ApisRbac_authorization_k8s_ioV1alpha1WatchClusterrolebindings
-           'clusterroles': ApisRbac_authorization_k8s_ioV1alpha1WatchClusterroles
-           'clusterrole': ApisRbac_authorization_k8s_ioV1alpha1WatchClusterroles
-           'rolebindings': ApisRbac_authorization_k8s_ioV1alpha1WatchRolebindings
-           'rolebinding': ApisRbac_authorization_k8s_ioV1alpha1WatchRolebindings
-           'roles': ApisRbac_authorization_k8s_ioV1alpha1WatchRoles
-           'role': ApisRbac_authorization_k8s_ioV1alpha1WatchRoles
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchClusterroles {
+           // Path templating
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1WatchClusterrolesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchRolebindings {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1alpha1WatchRoles {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisRbacAuthorizationK8sIoV1alpha1Watch {
+           // Path templating
+           // Sub-paths
+           'namespaces': ApisRbacAuthorizationK8sIoV1alpha1WatchNamespaces
+           'ns': ApisRbacAuthorizationK8sIoV1alpha1WatchNamespaces
+           'namespace': ApisRbacAuthorizationK8sIoV1alpha1WatchNamespaces
+           'clusterrolebindings': ApisRbacAuthorizationK8sIoV1alpha1WatchClusterrolebindings
+           'clusterrolebinding': ApisRbacAuthorizationK8sIoV1alpha1WatchClusterrolebindings
+           'clusterroles': ApisRbacAuthorizationK8sIoV1alpha1WatchClusterroles
+           'clusterrole': ApisRbacAuthorizationK8sIoV1alpha1WatchClusterroles
+           'rolebindings': ApisRbacAuthorizationK8sIoV1alpha1WatchRolebindings
+           'rolebinding': ApisRbacAuthorizationK8sIoV1alpha1WatchRolebindings
+           'roles': ApisRbacAuthorizationK8sIoV1alpha1WatchRoles
+           'role': ApisRbacAuthorizationK8sIoV1alpha1WatchRoles
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolebindingsName {
+export interface ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRolebindingsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4344,9 +4344,9 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolebindings
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolebindings {
+export interface ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRolebindings {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolebindingsName
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRolebindingsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4356,7 +4356,7 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolebindings
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolesName {
+export interface ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRolesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4368,9 +4368,9 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRoles {
+export interface ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRoles {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolesName
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRolesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4380,26 +4380,26 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRoles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1NamespacesName {
+export interface ApisRbacAuthorizationK8sIoV1alpha1NamespacesName {
            // Path templating
            // Sub-paths
-           'rolebindings': ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolebindings
-           'rolebinding': ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRolebindings
-           'roles': ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRoles
-           'role': ApisRbac_authorization_k8s_ioV1alpha1NamespacesNameRoles
+           'rolebindings': ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRolebindings
+           'rolebinding': ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRolebindings
+           'roles': ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRoles
+           'role': ApisRbacAuthorizationK8sIoV1alpha1NamespacesNameRoles
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1Namespaces {
+export interface ApisRbacAuthorizationK8sIoV1alpha1Namespaces {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1NamespacesName
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1ClusterrolebindingsName {
+export interface ApisRbacAuthorizationK8sIoV1alpha1ClusterrolebindingsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4411,9 +4411,9 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1ClusterrolebindingsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1Clusterrolebindings {
+export interface ApisRbacAuthorizationK8sIoV1alpha1Clusterrolebindings {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1ClusterrolebindingsName
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1ClusterrolebindingsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4423,7 +4423,7 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1Clusterrolebindings {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1ClusterrolesName {
+export interface ApisRbacAuthorizationK8sIoV1alpha1ClusterrolesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4435,9 +4435,9 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1ClusterrolesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1Clusterroles {
+export interface ApisRbacAuthorizationK8sIoV1alpha1Clusterroles {
            // Path templating
-           (name: string): ApisRbac_authorization_k8s_ioV1alpha1ClusterrolesName
+           (name: string): ApisRbacAuthorizationK8sIoV1alpha1ClusterrolesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4447,7 +4447,7 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1Clusterroles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1Rolebindings {
+export interface ApisRbacAuthorizationK8sIoV1alpha1Rolebindings {
            // Path templating
            // Sub-paths
            // Calls
@@ -4456,7 +4456,7 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1Rolebindings {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1Roles {
+export interface ApisRbacAuthorizationK8sIoV1alpha1Roles {
            // Path templating
            // Sub-paths
            // Calls
@@ -4465,75 +4465,39 @@ export interface ApisRbac_authorization_k8s_ioV1alpha1Roles {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_ioV1alpha1 {
+export interface ApisRbacAuthorizationK8sIoV1alpha1 {
            // Path templating
            // Sub-paths
-           'watch': ApisRbac_authorization_k8s_ioV1alpha1Watch
-           'namespaces': ApisRbac_authorization_k8s_ioV1alpha1Namespaces
-           'ns': ApisRbac_authorization_k8s_ioV1alpha1Namespaces
-           'namespace': ApisRbac_authorization_k8s_ioV1alpha1Namespaces
-           'clusterrolebindings': ApisRbac_authorization_k8s_ioV1alpha1Clusterrolebindings
-           'clusterrolebinding': ApisRbac_authorization_k8s_ioV1alpha1Clusterrolebindings
-           'clusterroles': ApisRbac_authorization_k8s_ioV1alpha1Clusterroles
-           'clusterrole': ApisRbac_authorization_k8s_ioV1alpha1Clusterroles
-           'rolebindings': ApisRbac_authorization_k8s_ioV1alpha1Rolebindings
-           'rolebinding': ApisRbac_authorization_k8s_ioV1alpha1Rolebindings
-           'roles': ApisRbac_authorization_k8s_ioV1alpha1Roles
-           'role': ApisRbac_authorization_k8s_ioV1alpha1Roles
+           'watch': ApisRbacAuthorizationK8sIoV1alpha1Watch
+           'namespaces': ApisRbacAuthorizationK8sIoV1alpha1Namespaces
+           'ns': ApisRbacAuthorizationK8sIoV1alpha1Namespaces
+           'namespace': ApisRbacAuthorizationK8sIoV1alpha1Namespaces
+           'clusterrolebindings': ApisRbacAuthorizationK8sIoV1alpha1Clusterrolebindings
+           'clusterrolebinding': ApisRbacAuthorizationK8sIoV1alpha1Clusterrolebindings
+           'clusterroles': ApisRbacAuthorizationK8sIoV1alpha1Clusterroles
+           'clusterrole': ApisRbacAuthorizationK8sIoV1alpha1Clusterroles
+           'rolebindings': ApisRbacAuthorizationK8sIoV1alpha1Rolebindings
+           'rolebinding': ApisRbacAuthorizationK8sIoV1alpha1Rolebindings
+           'roles': ApisRbacAuthorizationK8sIoV1alpha1Roles
+           'role': ApisRbacAuthorizationK8sIoV1alpha1Roles
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisRbac_authorization_k8s_io {
+export interface ApisRbacAuthorizationK8sIo {
            // Path templating
            // Sub-paths
-           'v1': ApisRbac_authorization_k8s_ioV1
-           'v1alpha1': ApisRbac_authorization_k8s_ioV1alpha1
+           'v1': ApisRbacAuthorizationK8sIoV1
+           'v1alpha1': ApisRbacAuthorizationK8sIoV1alpha1
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1WatchNamespacesNameCsistoragecapacitiesName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1alpha1WatchNamespacesNameCsistoragecapacities {
-           // Path templating
-           (name: string): ApisStorage_k8s_ioV1alpha1WatchNamespacesNameCsistoragecapacitiesName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1alpha1WatchNamespacesName {
-           // Path templating
-           // Sub-paths
-           'csistoragecapacities': ApisStorage_k8s_ioV1alpha1WatchNamespacesNameCsistoragecapacities
-           'csistoragecapacitie': ApisStorage_k8s_ioV1alpha1WatchNamespacesNameCsistoragecapacities
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1alpha1WatchNamespaces {
-           // Path templating
-           (name: string): ApisStorage_k8s_ioV1alpha1WatchNamespacesName
-           // Sub-paths
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1alpha1WatchVolumeattachmentsName {
+export interface ApisStorageK8sIoV1alpha1WatchNamespacesNameCsistoragecapacitiesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4542,9 +4506,9 @@ export interface ApisStorage_k8s_ioV1alpha1WatchVolumeattachmentsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1WatchVolumeattachments {
+export interface ApisStorageK8sIoV1alpha1WatchNamespacesNameCsistoragecapacities {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1alpha1WatchVolumeattachmentsName
+           (name: string): ApisStorageK8sIoV1alpha1WatchNamespacesNameCsistoragecapacitiesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4552,7 +4516,24 @@ export interface ApisStorage_k8s_ioV1alpha1WatchVolumeattachments {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1WatchCsistoragecapacities {
+export interface ApisStorageK8sIoV1alpha1WatchNamespacesName {
+           // Path templating
+           // Sub-paths
+           'csistoragecapacities': ApisStorageK8sIoV1alpha1WatchNamespacesNameCsistoragecapacities
+           'csistoragecapacitie': ApisStorageK8sIoV1alpha1WatchNamespacesNameCsistoragecapacities
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1alpha1WatchNamespaces {
+           // Path templating
+           (name: string): ApisStorageK8sIoV1alpha1WatchNamespacesName
+           // Sub-paths
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1alpha1WatchVolumeattachmentsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4561,21 +4542,40 @@ export interface ApisStorage_k8s_ioV1alpha1WatchCsistoragecapacities {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1Watch {
+export interface ApisStorageK8sIoV1alpha1WatchVolumeattachments {
+           // Path templating
+           (name: string): ApisStorageK8sIoV1alpha1WatchVolumeattachmentsName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1alpha1WatchCsistoragecapacities {
            // Path templating
            // Sub-paths
-           'namespaces': ApisStorage_k8s_ioV1alpha1WatchNamespaces
-           'ns': ApisStorage_k8s_ioV1alpha1WatchNamespaces
-           'namespace': ApisStorage_k8s_ioV1alpha1WatchNamespaces
-           'volumeattachments': ApisStorage_k8s_ioV1alpha1WatchVolumeattachments
-           'volumeattachment': ApisStorage_k8s_ioV1alpha1WatchVolumeattachments
-           'csistoragecapacities': ApisStorage_k8s_ioV1alpha1WatchCsistoragecapacities
-           'csistoragecapacitie': ApisStorage_k8s_ioV1alpha1WatchCsistoragecapacities
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1alpha1Watch {
+           // Path templating
+           // Sub-paths
+           'namespaces': ApisStorageK8sIoV1alpha1WatchNamespaces
+           'ns': ApisStorageK8sIoV1alpha1WatchNamespaces
+           'namespace': ApisStorageK8sIoV1alpha1WatchNamespaces
+           'volumeattachments': ApisStorageK8sIoV1alpha1WatchVolumeattachments
+           'volumeattachment': ApisStorageK8sIoV1alpha1WatchVolumeattachments
+           'csistoragecapacities': ApisStorageK8sIoV1alpha1WatchCsistoragecapacities
+           'csistoragecapacitie': ApisStorageK8sIoV1alpha1WatchCsistoragecapacities
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1NamespacesNameCsistoragecapacitiesName {
+export interface ApisStorageK8sIoV1alpha1NamespacesNameCsistoragecapacitiesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4587,9 +4587,9 @@ export interface ApisStorage_k8s_ioV1alpha1NamespacesNameCsistoragecapacitiesNam
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1NamespacesNameCsistoragecapacities {
+export interface ApisStorageK8sIoV1alpha1NamespacesNameCsistoragecapacities {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1alpha1NamespacesNameCsistoragecapacitiesName
+           (name: string): ApisStorageK8sIoV1alpha1NamespacesNameCsistoragecapacitiesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4599,24 +4599,24 @@ export interface ApisStorage_k8s_ioV1alpha1NamespacesNameCsistoragecapacities {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1NamespacesName {
+export interface ApisStorageK8sIoV1alpha1NamespacesName {
            // Path templating
            // Sub-paths
-           'csistoragecapacities': ApisStorage_k8s_ioV1alpha1NamespacesNameCsistoragecapacities
-           'csistoragecapacitie': ApisStorage_k8s_ioV1alpha1NamespacesNameCsistoragecapacities
+           'csistoragecapacities': ApisStorageK8sIoV1alpha1NamespacesNameCsistoragecapacities
+           'csistoragecapacitie': ApisStorageK8sIoV1alpha1NamespacesNameCsistoragecapacities
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1Namespaces {
+export interface ApisStorageK8sIoV1alpha1Namespaces {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1alpha1NamespacesName
+           (name: string): ApisStorageK8sIoV1alpha1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1VolumeattachmentsName {
+export interface ApisStorageK8sIoV1alpha1VolumeattachmentsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4628,9 +4628,9 @@ export interface ApisStorage_k8s_ioV1alpha1VolumeattachmentsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1Volumeattachments {
+export interface ApisStorageK8sIoV1alpha1Volumeattachments {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1alpha1VolumeattachmentsName
+           (name: string): ApisStorageK8sIoV1alpha1VolumeattachmentsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4640,7 +4640,7 @@ export interface ApisStorage_k8s_ioV1alpha1Volumeattachments {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1Csistoragecapacities {
+export interface ApisStorageK8sIoV1alpha1Csistoragecapacities {
            // Path templating
            // Sub-paths
            // Calls
@@ -4649,60 +4649,24 @@ export interface ApisStorage_k8s_ioV1alpha1Csistoragecapacities {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1alpha1 {
+export interface ApisStorageK8sIoV1alpha1 {
            // Path templating
            // Sub-paths
-           'watch': ApisStorage_k8s_ioV1alpha1Watch
-           'namespaces': ApisStorage_k8s_ioV1alpha1Namespaces
-           'ns': ApisStorage_k8s_ioV1alpha1Namespaces
-           'namespace': ApisStorage_k8s_ioV1alpha1Namespaces
-           'volumeattachments': ApisStorage_k8s_ioV1alpha1Volumeattachments
-           'volumeattachment': ApisStorage_k8s_ioV1alpha1Volumeattachments
-           'csistoragecapacities': ApisStorage_k8s_ioV1alpha1Csistoragecapacities
-           'csistoragecapacitie': ApisStorage_k8s_ioV1alpha1Csistoragecapacities
+           'watch': ApisStorageK8sIoV1alpha1Watch
+           'namespaces': ApisStorageK8sIoV1alpha1Namespaces
+           'ns': ApisStorageK8sIoV1alpha1Namespaces
+           'namespace': ApisStorageK8sIoV1alpha1Namespaces
+           'volumeattachments': ApisStorageK8sIoV1alpha1Volumeattachments
+           'volumeattachment': ApisStorageK8sIoV1alpha1Volumeattachments
+           'csistoragecapacities': ApisStorageK8sIoV1alpha1Csistoragecapacities
+           'csistoragecapacitie': ApisStorageK8sIoV1alpha1Csistoragecapacities
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1beta1WatchNamespacesNameCsistoragecapacitiesName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1beta1WatchNamespacesNameCsistoragecapacities {
-           // Path templating
-           (name: string): ApisStorage_k8s_ioV1beta1WatchNamespacesNameCsistoragecapacitiesName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1beta1WatchNamespacesName {
-           // Path templating
-           // Sub-paths
-           'csistoragecapacities': ApisStorage_k8s_ioV1beta1WatchNamespacesNameCsistoragecapacities
-           'csistoragecapacitie': ApisStorage_k8s_ioV1beta1WatchNamespacesNameCsistoragecapacities
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1beta1WatchNamespaces {
-           // Path templating
-           (name: string): ApisStorage_k8s_ioV1beta1WatchNamespacesName
-           // Sub-paths
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1beta1WatchCsistoragecapacities {
+export interface ApisStorageK8sIoV1beta1WatchNamespacesNameCsistoragecapacitiesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4711,19 +4675,55 @@ export interface ApisStorage_k8s_ioV1beta1WatchCsistoragecapacities {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1beta1Watch {
+export interface ApisStorageK8sIoV1beta1WatchNamespacesNameCsistoragecapacities {
+           // Path templating
+           (name: string): ApisStorageK8sIoV1beta1WatchNamespacesNameCsistoragecapacitiesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1beta1WatchNamespacesName {
            // Path templating
            // Sub-paths
-           'namespaces': ApisStorage_k8s_ioV1beta1WatchNamespaces
-           'ns': ApisStorage_k8s_ioV1beta1WatchNamespaces
-           'namespace': ApisStorage_k8s_ioV1beta1WatchNamespaces
-           'csistoragecapacities': ApisStorage_k8s_ioV1beta1WatchCsistoragecapacities
-           'csistoragecapacitie': ApisStorage_k8s_ioV1beta1WatchCsistoragecapacities
+           'csistoragecapacities': ApisStorageK8sIoV1beta1WatchNamespacesNameCsistoragecapacities
+           'csistoragecapacitie': ApisStorageK8sIoV1beta1WatchNamespacesNameCsistoragecapacities
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1beta1NamespacesNameCsistoragecapacitiesName {
+export interface ApisStorageK8sIoV1beta1WatchNamespaces {
+           // Path templating
+           (name: string): ApisStorageK8sIoV1beta1WatchNamespacesName
+           // Sub-paths
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1beta1WatchCsistoragecapacities {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1beta1Watch {
+           // Path templating
+           // Sub-paths
+           'namespaces': ApisStorageK8sIoV1beta1WatchNamespaces
+           'ns': ApisStorageK8sIoV1beta1WatchNamespaces
+           'namespace': ApisStorageK8sIoV1beta1WatchNamespaces
+           'csistoragecapacities': ApisStorageK8sIoV1beta1WatchCsistoragecapacities
+           'csistoragecapacitie': ApisStorageK8sIoV1beta1WatchCsistoragecapacities
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1beta1NamespacesNameCsistoragecapacitiesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4735,9 +4735,9 @@ export interface ApisStorage_k8s_ioV1beta1NamespacesNameCsistoragecapacitiesName
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1beta1NamespacesNameCsistoragecapacities {
+export interface ApisStorageK8sIoV1beta1NamespacesNameCsistoragecapacities {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1beta1NamespacesNameCsistoragecapacitiesName
+           (name: string): ApisStorageK8sIoV1beta1NamespacesNameCsistoragecapacitiesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4747,48 +4747,48 @@ export interface ApisStorage_k8s_ioV1beta1NamespacesNameCsistoragecapacities {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1beta1NamespacesName {
+export interface ApisStorageK8sIoV1beta1NamespacesName {
            // Path templating
            // Sub-paths
-           'csistoragecapacities': ApisStorage_k8s_ioV1beta1NamespacesNameCsistoragecapacities
-           'csistoragecapacitie': ApisStorage_k8s_ioV1beta1NamespacesNameCsistoragecapacities
+           'csistoragecapacities': ApisStorageK8sIoV1beta1NamespacesNameCsistoragecapacities
+           'csistoragecapacitie': ApisStorageK8sIoV1beta1NamespacesNameCsistoragecapacities
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1beta1Namespaces {
+export interface ApisStorageK8sIoV1beta1Namespaces {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1beta1NamespacesName
+           (name: string): ApisStorageK8sIoV1beta1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1beta1Csistoragecapacities {
+export interface ApisStorageK8sIoV1beta1Csistoragecapacities {
            // Path templating
            // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1beta1 {
-           // Path templating
-           // Sub-paths
-           'watch': ApisStorage_k8s_ioV1beta1Watch
-           'namespaces': ApisStorage_k8s_ioV1beta1Namespaces
-           'ns': ApisStorage_k8s_ioV1beta1Namespaces
-           'namespace': ApisStorage_k8s_ioV1beta1Namespaces
-           'csistoragecapacities': ApisStorage_k8s_ioV1beta1Csistoragecapacities
-           'csistoragecapacitie': ApisStorage_k8s_ioV1beta1Csistoragecapacities
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1VolumeattachmentsNameStatus {
+export interface ApisStorageK8sIoV1beta1 {
+           // Path templating
+           // Sub-paths
+           'watch': ApisStorageK8sIoV1beta1Watch
+           'namespaces': ApisStorageK8sIoV1beta1Namespaces
+           'ns': ApisStorageK8sIoV1beta1Namespaces
+           'namespace': ApisStorageK8sIoV1beta1Namespaces
+           'csistoragecapacities': ApisStorageK8sIoV1beta1Csistoragecapacities
+           'csistoragecapacitie': ApisStorageK8sIoV1beta1Csistoragecapacities
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1VolumeattachmentsNameStatus {
            // Path templating
            // Sub-paths
            // Calls
@@ -4799,10 +4799,10 @@ export interface ApisStorage_k8s_ioV1VolumeattachmentsNameStatus {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1VolumeattachmentsName {
+export interface ApisStorageK8sIoV1VolumeattachmentsName {
            // Path templating
            // Sub-paths
-           'status': ApisStorage_k8s_ioV1VolumeattachmentsNameStatus
+           'status': ApisStorageK8sIoV1VolumeattachmentsNameStatus
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -4812,9 +4812,9 @@ export interface ApisStorage_k8s_ioV1VolumeattachmentsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1Volumeattachments {
+export interface ApisStorageK8sIoV1Volumeattachments {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1VolumeattachmentsName
+           (name: string): ApisStorageK8sIoV1VolumeattachmentsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4824,7 +4824,7 @@ export interface ApisStorage_k8s_ioV1Volumeattachments {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1WatchCsidriversName {
+export interface ApisStorageK8sIoV1WatchCsidriversName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4833,9 +4833,9 @@ export interface ApisStorage_k8s_ioV1WatchCsidriversName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1WatchCsidrivers {
+export interface ApisStorageK8sIoV1WatchCsidrivers {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1WatchCsidriversName
+           (name: string): ApisStorageK8sIoV1WatchCsidriversName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4843,26 +4843,7 @@ export interface ApisStorage_k8s_ioV1WatchCsidrivers {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1WatchCsinodesName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1WatchCsinodes {
-           // Path templating
-           (name: string): ApisStorage_k8s_ioV1WatchCsinodesName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisStorage_k8s_ioV1WatchStorageclassesName {
+export interface ApisStorageK8sIoV1WatchCsinodesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4871,9 +4852,9 @@ export interface ApisStorage_k8s_ioV1WatchStorageclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1WatchStorageclasses {
+export interface ApisStorageK8sIoV1WatchCsinodes {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1WatchStorageclassesName
+           (name: string): ApisStorageK8sIoV1WatchCsinodesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4881,7 +4862,7 @@ export interface ApisStorage_k8s_ioV1WatchStorageclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1WatchVolumeattachmentsName {
+export interface ApisStorageK8sIoV1WatchStorageclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4890,9 +4871,9 @@ export interface ApisStorage_k8s_ioV1WatchVolumeattachmentsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1WatchVolumeattachments {
+export interface ApisStorageK8sIoV1WatchStorageclasses {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1WatchVolumeattachmentsName
+           (name: string): ApisStorageK8sIoV1WatchStorageclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4900,22 +4881,41 @@ export interface ApisStorage_k8s_ioV1WatchVolumeattachments {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1Watch {
+export interface ApisStorageK8sIoV1WatchVolumeattachmentsName {
            // Path templating
            // Sub-paths
-           'csidrivers': ApisStorage_k8s_ioV1WatchCsidrivers
-           'csidriver': ApisStorage_k8s_ioV1WatchCsidrivers
-           'csinodes': ApisStorage_k8s_ioV1WatchCsinodes
-           'csinode': ApisStorage_k8s_ioV1WatchCsinodes
-           'storageclasses': ApisStorage_k8s_ioV1WatchStorageclasses
-           'storageclasse': ApisStorage_k8s_ioV1WatchStorageclasses
-           'volumeattachments': ApisStorage_k8s_ioV1WatchVolumeattachments
-           'volumeattachment': ApisStorage_k8s_ioV1WatchVolumeattachments
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1WatchVolumeattachments {
+           // Path templating
+           (name: string): ApisStorageK8sIoV1WatchVolumeattachmentsName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisStorageK8sIoV1Watch {
+           // Path templating
+           // Sub-paths
+           'csidrivers': ApisStorageK8sIoV1WatchCsidrivers
+           'csidriver': ApisStorageK8sIoV1WatchCsidrivers
+           'csinodes': ApisStorageK8sIoV1WatchCsinodes
+           'csinode': ApisStorageK8sIoV1WatchCsinodes
+           'storageclasses': ApisStorageK8sIoV1WatchStorageclasses
+           'storageclasse': ApisStorageK8sIoV1WatchStorageclasses
+           'volumeattachments': ApisStorageK8sIoV1WatchVolumeattachments
+           'volumeattachment': ApisStorageK8sIoV1WatchVolumeattachments
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1CsidriversName {
+export interface ApisStorageK8sIoV1CsidriversName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4927,9 +4927,9 @@ export interface ApisStorage_k8s_ioV1CsidriversName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1Csidrivers {
+export interface ApisStorageK8sIoV1Csidrivers {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1CsidriversName
+           (name: string): ApisStorageK8sIoV1CsidriversName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4939,7 +4939,7 @@ export interface ApisStorage_k8s_ioV1Csidrivers {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1CsinodesName {
+export interface ApisStorageK8sIoV1CsinodesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4951,9 +4951,9 @@ export interface ApisStorage_k8s_ioV1CsinodesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1Csinodes {
+export interface ApisStorageK8sIoV1Csinodes {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1CsinodesName
+           (name: string): ApisStorageK8sIoV1CsinodesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4963,7 +4963,7 @@ export interface ApisStorage_k8s_ioV1Csinodes {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1StorageclassesName {
+export interface ApisStorageK8sIoV1StorageclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -4975,9 +4975,9 @@ export interface ApisStorage_k8s_ioV1StorageclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1Storageclasses {
+export interface ApisStorageK8sIoV1Storageclasses {
            // Path templating
-           (name: string): ApisStorage_k8s_ioV1StorageclassesName
+           (name: string): ApisStorageK8sIoV1StorageclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -4987,56 +4987,37 @@ export interface ApisStorage_k8s_ioV1Storageclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_ioV1 {
+export interface ApisStorageK8sIoV1 {
            // Path templating
            // Sub-paths
-           'volumeattachments': ApisStorage_k8s_ioV1Volumeattachments
-           'volumeattachment': ApisStorage_k8s_ioV1Volumeattachments
-           'watch': ApisStorage_k8s_ioV1Watch
-           'csidrivers': ApisStorage_k8s_ioV1Csidrivers
-           'csidriver': ApisStorage_k8s_ioV1Csidrivers
-           'csinodes': ApisStorage_k8s_ioV1Csinodes
-           'csinode': ApisStorage_k8s_ioV1Csinodes
-           'storageclasses': ApisStorage_k8s_ioV1Storageclasses
-           'storageclasse': ApisStorage_k8s_ioV1Storageclasses
+           'volumeattachments': ApisStorageK8sIoV1Volumeattachments
+           'volumeattachment': ApisStorageK8sIoV1Volumeattachments
+           'watch': ApisStorageK8sIoV1Watch
+           'csidrivers': ApisStorageK8sIoV1Csidrivers
+           'csidriver': ApisStorageK8sIoV1Csidrivers
+           'csinodes': ApisStorageK8sIoV1Csinodes
+           'csinode': ApisStorageK8sIoV1Csinodes
+           'storageclasses': ApisStorageK8sIoV1Storageclasses
+           'storageclasse': ApisStorageK8sIoV1Storageclasses
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisStorage_k8s_io {
+export interface ApisStorageK8sIo {
            // Path templating
            // Sub-paths
-           'v1alpha1': ApisStorage_k8s_ioV1alpha1
-           'v1beta1': ApisStorage_k8s_ioV1beta1
-           'v1': ApisStorage_k8s_ioV1
+           'v1alpha1': ApisStorageK8sIoV1alpha1
+           'v1beta1': ApisStorageK8sIoV1beta1
+           'v1': ApisStorageK8sIoV1
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_ioV1WatchMutatingwebhookconfigurationsName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisAdmissionregistration_k8s_ioV1WatchMutatingwebhookconfigurations {
-           // Path templating
-           (name: string): ApisAdmissionregistration_k8s_ioV1WatchMutatingwebhookconfigurationsName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisAdmissionregistration_k8s_ioV1WatchValidatingwebhookconfigurationsName {
+export interface ApisAdmissionregistrationK8sIoV1WatchMutatingwebhookconfigurationsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5045,9 +5026,9 @@ export interface ApisAdmissionregistration_k8s_ioV1WatchValidatingwebhookconfigu
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_ioV1WatchValidatingwebhookconfigurations {
+export interface ApisAdmissionregistrationK8sIoV1WatchMutatingwebhookconfigurations {
            // Path templating
-           (name: string): ApisAdmissionregistration_k8s_ioV1WatchValidatingwebhookconfigurationsName
+           (name: string): ApisAdmissionregistrationK8sIoV1WatchMutatingwebhookconfigurationsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5055,18 +5036,37 @@ export interface ApisAdmissionregistration_k8s_ioV1WatchValidatingwebhookconfigu
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_ioV1Watch {
+export interface ApisAdmissionregistrationK8sIoV1WatchValidatingwebhookconfigurationsName {
            // Path templating
            // Sub-paths
-           'mutatingwebhookconfigurations': ApisAdmissionregistration_k8s_ioV1WatchMutatingwebhookconfigurations
-           'mutatingwebhookconfiguration': ApisAdmissionregistration_k8s_ioV1WatchMutatingwebhookconfigurations
-           'validatingwebhookconfigurations': ApisAdmissionregistration_k8s_ioV1WatchValidatingwebhookconfigurations
-           'validatingwebhookconfiguration': ApisAdmissionregistration_k8s_ioV1WatchValidatingwebhookconfigurations
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisAdmissionregistrationK8sIoV1WatchValidatingwebhookconfigurations {
+           // Path templating
+           (name: string): ApisAdmissionregistrationK8sIoV1WatchValidatingwebhookconfigurationsName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisAdmissionregistrationK8sIoV1Watch {
+           // Path templating
+           // Sub-paths
+           'mutatingwebhookconfigurations': ApisAdmissionregistrationK8sIoV1WatchMutatingwebhookconfigurations
+           'mutatingwebhookconfiguration': ApisAdmissionregistrationK8sIoV1WatchMutatingwebhookconfigurations
+           'validatingwebhookconfigurations': ApisAdmissionregistrationK8sIoV1WatchValidatingwebhookconfigurations
+           'validatingwebhookconfiguration': ApisAdmissionregistrationK8sIoV1WatchValidatingwebhookconfigurations
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_ioV1MutatingwebhookconfigurationsName {
+export interface ApisAdmissionregistrationK8sIoV1MutatingwebhookconfigurationsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5078,9 +5078,9 @@ export interface ApisAdmissionregistration_k8s_ioV1Mutatingwebhookconfigurations
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_ioV1Mutatingwebhookconfigurations {
+export interface ApisAdmissionregistrationK8sIoV1Mutatingwebhookconfigurations {
            // Path templating
-           (name: string): ApisAdmissionregistration_k8s_ioV1MutatingwebhookconfigurationsName
+           (name: string): ApisAdmissionregistrationK8sIoV1MutatingwebhookconfigurationsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5090,7 +5090,7 @@ export interface ApisAdmissionregistration_k8s_ioV1Mutatingwebhookconfigurations
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_ioV1ValidatingwebhookconfigurationsName {
+export interface ApisAdmissionregistrationK8sIoV1ValidatingwebhookconfigurationsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5102,9 +5102,9 @@ export interface ApisAdmissionregistration_k8s_ioV1Validatingwebhookconfiguratio
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_ioV1Validatingwebhookconfigurations {
+export interface ApisAdmissionregistrationK8sIoV1Validatingwebhookconfigurations {
            // Path templating
-           (name: string): ApisAdmissionregistration_k8s_ioV1ValidatingwebhookconfigurationsName
+           (name: string): ApisAdmissionregistrationK8sIoV1ValidatingwebhookconfigurationsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5114,31 +5114,31 @@ export interface ApisAdmissionregistration_k8s_ioV1Validatingwebhookconfiguratio
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_ioV1 {
+export interface ApisAdmissionregistrationK8sIoV1 {
            // Path templating
            // Sub-paths
-           'watch': ApisAdmissionregistration_k8s_ioV1Watch
-           'mutatingwebhookconfigurations': ApisAdmissionregistration_k8s_ioV1Mutatingwebhookconfigurations
-           'mutatingwebhookconfiguration': ApisAdmissionregistration_k8s_ioV1Mutatingwebhookconfigurations
-           'validatingwebhookconfigurations': ApisAdmissionregistration_k8s_ioV1Validatingwebhookconfigurations
-           'validatingwebhookconfiguration': ApisAdmissionregistration_k8s_ioV1Validatingwebhookconfigurations
+           'watch': ApisAdmissionregistrationK8sIoV1Watch
+           'mutatingwebhookconfigurations': ApisAdmissionregistrationK8sIoV1Mutatingwebhookconfigurations
+           'mutatingwebhookconfiguration': ApisAdmissionregistrationK8sIoV1Mutatingwebhookconfigurations
+           'validatingwebhookconfigurations': ApisAdmissionregistrationK8sIoV1Validatingwebhookconfigurations
+           'validatingwebhookconfiguration': ApisAdmissionregistrationK8sIoV1Validatingwebhookconfigurations
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAdmissionregistration_k8s_io {
+export interface ApisAdmissionregistrationK8sIo {
            // Path templating
            // Sub-paths
-           'v1': ApisAdmissionregistration_k8s_ioV1
+           'v1': ApisAdmissionregistrationK8sIoV1
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiextensions_k8s_ioV1CustomresourcedefinitionsNameStatus {
+export interface ApisApiextensionsK8sIoV1CustomresourcedefinitionsNameStatus {
            // Path templating
            // Sub-paths
            // Calls
@@ -5149,10 +5149,10 @@ export interface ApisApiextensions_k8s_ioV1CustomresourcedefinitionsNameStatus {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiextensions_k8s_ioV1CustomresourcedefinitionsName {
+export interface ApisApiextensionsK8sIoV1CustomresourcedefinitionsName {
            // Path templating
            // Sub-paths
-           'status': ApisApiextensions_k8s_ioV1CustomresourcedefinitionsNameStatus
+           'status': ApisApiextensionsK8sIoV1CustomresourcedefinitionsNameStatus
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -5162,9 +5162,9 @@ export interface ApisApiextensions_k8s_ioV1CustomresourcedefinitionsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiextensions_k8s_ioV1Customresourcedefinitions {
+export interface ApisApiextensionsK8sIoV1Customresourcedefinitions {
            // Path templating
-           (name: string): ApisApiextensions_k8s_ioV1CustomresourcedefinitionsName
+           (name: string): ApisApiextensionsK8sIoV1CustomresourcedefinitionsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5174,7 +5174,7 @@ export interface ApisApiextensions_k8s_ioV1Customresourcedefinitions {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiextensions_k8s_ioV1WatchCustomresourcedefinitionsName {
+export interface ApisApiextensionsK8sIoV1WatchCustomresourcedefinitionsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5183,9 +5183,9 @@ export interface ApisApiextensions_k8s_ioV1WatchCustomresourcedefinitionsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiextensions_k8s_ioV1WatchCustomresourcedefinitions {
+export interface ApisApiextensionsK8sIoV1WatchCustomresourcedefinitions {
            // Path templating
-           (name: string): ApisApiextensions_k8s_ioV1WatchCustomresourcedefinitionsName
+           (name: string): ApisApiextensionsK8sIoV1WatchCustomresourcedefinitionsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5193,40 +5193,40 @@ export interface ApisApiextensions_k8s_ioV1WatchCustomresourcedefinitions {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiextensions_k8s_ioV1Watch {
+export interface ApisApiextensionsK8sIoV1Watch {
            // Path templating
            // Sub-paths
-           'customresourcedefinitions': ApisApiextensions_k8s_ioV1WatchCustomresourcedefinitions
-           'crd': ApisApiextensions_k8s_ioV1WatchCustomresourcedefinitions
-           'customresourcedefinition': ApisApiextensions_k8s_ioV1WatchCustomresourcedefinitions
+           'customresourcedefinitions': ApisApiextensionsK8sIoV1WatchCustomresourcedefinitions
+           'crd': ApisApiextensionsK8sIoV1WatchCustomresourcedefinitions
+           'customresourcedefinition': ApisApiextensionsK8sIoV1WatchCustomresourcedefinitions
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiextensions_k8s_ioV1 {
+export interface ApisApiextensionsK8sIoV1 {
            // Path templating
            // Sub-paths
-           'customresourcedefinitions': ApisApiextensions_k8s_ioV1Customresourcedefinitions
-           'crd': ApisApiextensions_k8s_ioV1Customresourcedefinitions
-           'customresourcedefinition': ApisApiextensions_k8s_ioV1Customresourcedefinitions
-           'watch': ApisApiextensions_k8s_ioV1Watch
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisApiextensions_k8s_io {
-           // Path templating
-           // Sub-paths
-           'v1': ApisApiextensions_k8s_ioV1
+           'customresourcedefinitions': ApisApiextensionsK8sIoV1Customresourcedefinitions
+           'crd': ApisApiextensionsK8sIoV1Customresourcedefinitions
+           'customresourcedefinition': ApisApiextensionsK8sIoV1Customresourcedefinitions
+           'watch': ApisApiextensionsK8sIoV1Watch
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiregistration_k8s_ioV1ApiservicesNameStatus {
+export interface ApisApiextensionsK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1': ApisApiextensionsK8sIoV1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisApiregistrationK8sIoV1ApiservicesNameStatus {
            // Path templating
            // Sub-paths
            // Calls
@@ -5237,10 +5237,10 @@ export interface ApisApiregistration_k8s_ioV1ApiservicesNameStatus {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiregistration_k8s_ioV1ApiservicesName {
+export interface ApisApiregistrationK8sIoV1ApiservicesName {
            // Path templating
            // Sub-paths
-           'status': ApisApiregistration_k8s_ioV1ApiservicesNameStatus
+           'status': ApisApiregistrationK8sIoV1ApiservicesNameStatus
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -5250,9 +5250,9 @@ export interface ApisApiregistration_k8s_ioV1ApiservicesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiregistration_k8s_ioV1Apiservices {
+export interface ApisApiregistrationK8sIoV1Apiservices {
            // Path templating
-           (name: string): ApisApiregistration_k8s_ioV1ApiservicesName
+           (name: string): ApisApiregistrationK8sIoV1ApiservicesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5262,7 +5262,7 @@ export interface ApisApiregistration_k8s_ioV1Apiservices {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiregistration_k8s_ioV1WatchApiservicesName {
+export interface ApisApiregistrationK8sIoV1WatchApiservicesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5271,9 +5271,9 @@ export interface ApisApiregistration_k8s_ioV1WatchApiservicesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiregistration_k8s_ioV1WatchApiservices {
+export interface ApisApiregistrationK8sIoV1WatchApiservices {
            // Path templating
-           (name: string): ApisApiregistration_k8s_ioV1WatchApiservicesName
+           (name: string): ApisApiregistrationK8sIoV1WatchApiservicesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5281,38 +5281,38 @@ export interface ApisApiregistration_k8s_ioV1WatchApiservices {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiregistration_k8s_ioV1Watch {
+export interface ApisApiregistrationK8sIoV1Watch {
            // Path templating
            // Sub-paths
-           'apiservices': ApisApiregistration_k8s_ioV1WatchApiservices
-           'apiservice': ApisApiregistration_k8s_ioV1WatchApiservices
+           'apiservices': ApisApiregistrationK8sIoV1WatchApiservices
+           'apiservice': ApisApiregistrationK8sIoV1WatchApiservices
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisApiregistration_k8s_ioV1 {
+export interface ApisApiregistrationK8sIoV1 {
            // Path templating
            // Sub-paths
-           'apiservices': ApisApiregistration_k8s_ioV1Apiservices
-           'apiservice': ApisApiregistration_k8s_ioV1Apiservices
-           'watch': ApisApiregistration_k8s_ioV1Watch
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisApiregistration_k8s_io {
-           // Path templating
-           // Sub-paths
-           'v1': ApisApiregistration_k8s_ioV1
+           'apiservices': ApisApiregistrationK8sIoV1Apiservices
+           'apiservice': ApisApiregistrationK8sIoV1Apiservices
+           'watch': ApisApiregistrationK8sIoV1Watch
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthorization_k8s_ioV1NamespacesNameLocalsubjectaccessreviews {
+export interface ApisApiregistrationK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1': ApisApiregistrationK8sIoV1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisAuthorizationK8sIoV1NamespacesNameLocalsubjectaccessreviews {
            // Path templating
            // Sub-paths
            // Calls
@@ -5320,32 +5320,24 @@ export interface ApisAuthorization_k8s_ioV1NamespacesNameLocalsubjectaccessrevie
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthorization_k8s_ioV1NamespacesName {
+export interface ApisAuthorizationK8sIoV1NamespacesName {
            // Path templating
            // Sub-paths
-           'localsubjectaccessreviews': ApisAuthorization_k8s_ioV1NamespacesNameLocalsubjectaccessreviews
-           'localsubjectaccessreview': ApisAuthorization_k8s_ioV1NamespacesNameLocalsubjectaccessreviews
+           'localsubjectaccessreviews': ApisAuthorizationK8sIoV1NamespacesNameLocalsubjectaccessreviews
+           'localsubjectaccessreview': ApisAuthorizationK8sIoV1NamespacesNameLocalsubjectaccessreviews
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthorization_k8s_ioV1Namespaces {
+export interface ApisAuthorizationK8sIoV1Namespaces {
            // Path templating
-           (name: string): ApisAuthorization_k8s_ioV1NamespacesName
+           (name: string): ApisAuthorizationK8sIoV1NamespacesName
            // Sub-paths
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthorization_k8s_ioV1Selfsubjectaccessreviews {
-           // Path templating
-           // Sub-paths
-           // Calls
-           post(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisAuthorization_k8s_ioV1Selfsubjectrulesreviews {
+export interface ApisAuthorizationK8sIoV1Selfsubjectaccessreviews {
            // Path templating
            // Sub-paths
            // Calls
@@ -5353,7 +5345,7 @@ export interface ApisAuthorization_k8s_ioV1Selfsubjectrulesreviews {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthorization_k8s_ioV1Subjectaccessreviews {
+export interface ApisAuthorizationK8sIoV1Selfsubjectrulesreviews {
            // Path templating
            // Sub-paths
            // Calls
@@ -5361,35 +5353,43 @@ export interface ApisAuthorization_k8s_ioV1Subjectaccessreviews {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthorization_k8s_ioV1 {
+export interface ApisAuthorizationK8sIoV1Subjectaccessreviews {
            // Path templating
            // Sub-paths
-           'namespaces': ApisAuthorization_k8s_ioV1Namespaces
-           'ns': ApisAuthorization_k8s_ioV1Namespaces
-           'namespace': ApisAuthorization_k8s_ioV1Namespaces
-           'selfsubjectaccessreviews': ApisAuthorization_k8s_ioV1Selfsubjectaccessreviews
-           'selfsubjectaccessreview': ApisAuthorization_k8s_ioV1Selfsubjectaccessreviews
-           'selfsubjectrulesreviews': ApisAuthorization_k8s_ioV1Selfsubjectrulesreviews
-           'selfsubjectrulesreview': ApisAuthorization_k8s_ioV1Selfsubjectrulesreviews
-           'subjectaccessreviews': ApisAuthorization_k8s_ioV1Subjectaccessreviews
-           'subjectaccessreview': ApisAuthorization_k8s_ioV1Subjectaccessreviews
+           // Calls
+           post(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisAuthorizationK8sIoV1 {
+           // Path templating
+           // Sub-paths
+           'namespaces': ApisAuthorizationK8sIoV1Namespaces
+           'ns': ApisAuthorizationK8sIoV1Namespaces
+           'namespace': ApisAuthorizationK8sIoV1Namespaces
+           'selfsubjectaccessreviews': ApisAuthorizationK8sIoV1Selfsubjectaccessreviews
+           'selfsubjectaccessreview': ApisAuthorizationK8sIoV1Selfsubjectaccessreviews
+           'selfsubjectrulesreviews': ApisAuthorizationK8sIoV1Selfsubjectrulesreviews
+           'selfsubjectrulesreview': ApisAuthorizationK8sIoV1Selfsubjectrulesreviews
+           'subjectaccessreviews': ApisAuthorizationK8sIoV1Subjectaccessreviews
+           'subjectaccessreview': ApisAuthorizationK8sIoV1Subjectaccessreviews
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthorization_k8s_io {
+export interface ApisAuthorizationK8sIo {
            // Path templating
            // Sub-paths
-           'v1': ApisAuthorization_k8s_ioV1
+           'v1': ApisAuthorizationK8sIoV1
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCertificates_k8s_ioV1CertificatesigningrequestsNameApproval {
+export interface ApisCertificatesK8sIoV1CertificatesigningrequestsNameApproval {
            // Path templating
            // Sub-paths
            // Calls
@@ -5400,7 +5400,7 @@ export interface ApisCertificates_k8s_ioV1CertificatesigningrequestsNameApproval
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCertificates_k8s_ioV1CertificatesigningrequestsNameStatus {
+export interface ApisCertificatesK8sIoV1CertificatesigningrequestsNameStatus {
            // Path templating
            // Sub-paths
            // Calls
@@ -5411,11 +5411,11 @@ export interface ApisCertificates_k8s_ioV1CertificatesigningrequestsNameStatus {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCertificates_k8s_ioV1CertificatesigningrequestsName {
+export interface ApisCertificatesK8sIoV1CertificatesigningrequestsName {
            // Path templating
            // Sub-paths
-           'approval': ApisCertificates_k8s_ioV1CertificatesigningrequestsNameApproval
-           'status': ApisCertificates_k8s_ioV1CertificatesigningrequestsNameStatus
+           'approval': ApisCertificatesK8sIoV1CertificatesigningrequestsNameApproval
+           'status': ApisCertificatesK8sIoV1CertificatesigningrequestsNameStatus
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -5425,95 +5425,9 @@ export interface ApisCertificates_k8s_ioV1CertificatesigningrequestsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisCertificates_k8s_ioV1Certificatesigningrequests {
+export interface ApisCertificatesK8sIoV1Certificatesigningrequests {
            // Path templating
-           (name: string): ApisCertificates_k8s_ioV1CertificatesigningrequestsName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           delete(options ?: any): any
-           post(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisCertificates_k8s_ioV1WatchCertificatesigningrequestsName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisCertificates_k8s_ioV1WatchCertificatesigningrequests {
-           // Path templating
-           (name: string): ApisCertificates_k8s_ioV1WatchCertificatesigningrequestsName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisCertificates_k8s_ioV1Watch {
-           // Path templating
-           // Sub-paths
-           'certificatesigningrequests': ApisCertificates_k8s_ioV1WatchCertificatesigningrequests
-           'certificatesigningrequest': ApisCertificates_k8s_ioV1WatchCertificatesigningrequests
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisCertificates_k8s_ioV1 {
-           // Path templating
-           // Sub-paths
-           'certificatesigningrequests': ApisCertificates_k8s_ioV1Certificatesigningrequests
-           'certificatesigningrequest': ApisCertificates_k8s_ioV1Certificatesigningrequests
-           'watch': ApisCertificates_k8s_ioV1Watch
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisCertificates_k8s_io {
-           // Path templating
-           // Sub-paths
-           'v1': ApisCertificates_k8s_ioV1
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1FlowschemasNameStatus {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           patch(options ?: any): any
-           put(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1FlowschemasName {
-           // Path templating
-           // Sub-paths
-           'status': ApisFlowcontrol_apiserver_k8s_ioV1beta1FlowschemasNameStatus
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           delete(options ?: any): any
-           patch(options ?: any): any
-           put(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1Flowschemas {
-           // Path templating
-           (name: string): ApisFlowcontrol_apiserver_k8s_ioV1beta1FlowschemasName
+           (name: string): ApisCertificatesK8sIoV1CertificatesigningrequestsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5523,7 +5437,57 @@ export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1Flowschemas {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1PrioritylevelconfigurationsNameStatus {
+export interface ApisCertificatesK8sIoV1WatchCertificatesigningrequestsName {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisCertificatesK8sIoV1WatchCertificatesigningrequests {
+           // Path templating
+           (name: string): ApisCertificatesK8sIoV1WatchCertificatesigningrequestsName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisCertificatesK8sIoV1Watch {
+           // Path templating
+           // Sub-paths
+           'certificatesigningrequests': ApisCertificatesK8sIoV1WatchCertificatesigningrequests
+           'certificatesigningrequest': ApisCertificatesK8sIoV1WatchCertificatesigningrequests
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisCertificatesK8sIoV1 {
+           // Path templating
+           // Sub-paths
+           'certificatesigningrequests': ApisCertificatesK8sIoV1Certificatesigningrequests
+           'certificatesigningrequest': ApisCertificatesK8sIoV1Certificatesigningrequests
+           'watch': ApisCertificatesK8sIoV1Watch
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisCertificatesK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1': ApisCertificatesK8sIoV1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisFlowcontrolApiserverK8sIoV1beta1FlowschemasNameStatus {
            // Path templating
            // Sub-paths
            // Calls
@@ -5534,10 +5498,10 @@ export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1Prioritylevelconfigurati
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1PrioritylevelconfigurationsName {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1FlowschemasName {
            // Path templating
            // Sub-paths
-           'status': ApisFlowcontrol_apiserver_k8s_ioV1beta1PrioritylevelconfigurationsNameStatus
+           'status': ApisFlowcontrolApiserverK8sIoV1beta1FlowschemasNameStatus
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -5547,9 +5511,9 @@ export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1Prioritylevelconfigurati
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1Prioritylevelconfigurations {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1Flowschemas {
            // Path templating
-           (name: string): ApisFlowcontrol_apiserver_k8s_ioV1beta1PrioritylevelconfigurationsName
+           (name: string): ApisFlowcontrolApiserverK8sIoV1beta1FlowschemasName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5559,80 +5523,7 @@ export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1Prioritylevelconfigurati
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchFlowschemasName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchFlowschemas {
-           // Path templating
-           (name: string): ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchFlowschemasName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchPrioritylevelconfigurationsName {
-           // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchPrioritylevelconfigurations {
-           // Path templating
-           (name: string): ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchPrioritylevelconfigurationsName
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1Watch {
-           // Path templating
-           // Sub-paths
-           'flowschemas': ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchFlowschemas
-           'flowschema': ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchFlowschemas
-           'prioritylevelconfigurations': ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchPrioritylevelconfigurations
-           'prioritylevelconfiguration': ApisFlowcontrol_apiserver_k8s_ioV1beta1WatchPrioritylevelconfigurations
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_ioV1beta1 {
-           // Path templating
-           // Sub-paths
-           'flowschemas': ApisFlowcontrol_apiserver_k8s_ioV1beta1Flowschemas
-           'flowschema': ApisFlowcontrol_apiserver_k8s_ioV1beta1Flowschemas
-           'prioritylevelconfigurations': ApisFlowcontrol_apiserver_k8s_ioV1beta1Prioritylevelconfigurations
-           'prioritylevelconfiguration': ApisFlowcontrol_apiserver_k8s_ioV1beta1Prioritylevelconfigurations
-           'watch': ApisFlowcontrol_apiserver_k8s_ioV1beta1Watch
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisFlowcontrol_apiserver_k8s_io {
-           // Path templating
-           // Sub-paths
-           'v1beta1': ApisFlowcontrol_apiserver_k8s_ioV1beta1
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisInternal_apiserver_k8s_ioV1alpha1StorageversionsNameStatus {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1PrioritylevelconfigurationsNameStatus {
            // Path templating
            // Sub-paths
            // Calls
@@ -5643,10 +5534,10 @@ export interface ApisInternal_apiserver_k8s_ioV1alpha1StorageversionsNameStatus 
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisInternal_apiserver_k8s_ioV1alpha1StorageversionsName {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1PrioritylevelconfigurationsName {
            // Path templating
            // Sub-paths
-           'status': ApisInternal_apiserver_k8s_ioV1alpha1StorageversionsNameStatus
+           'status': ApisFlowcontrolApiserverK8sIoV1beta1PrioritylevelconfigurationsNameStatus
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -5656,9 +5547,9 @@ export interface ApisInternal_apiserver_k8s_ioV1alpha1StorageversionsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisInternal_apiserver_k8s_ioV1alpha1Storageversions {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1Prioritylevelconfigurations {
            // Path templating
-           (name: string): ApisInternal_apiserver_k8s_ioV1alpha1StorageversionsName
+           (name: string): ApisFlowcontrolApiserverK8sIoV1beta1PrioritylevelconfigurationsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5668,7 +5559,7 @@ export interface ApisInternal_apiserver_k8s_ioV1alpha1Storageversions {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisInternal_apiserver_k8s_ioV1alpha1WatchStorageversionsName {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1WatchFlowschemasName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5677,9 +5568,9 @@ export interface ApisInternal_apiserver_k8s_ioV1alpha1WatchStorageversionsName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisInternal_apiserver_k8s_ioV1alpha1WatchStorageversions {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1WatchFlowschemas {
            // Path templating
-           (name: string): ApisInternal_apiserver_k8s_ioV1alpha1WatchStorageversionsName
+           (name: string): ApisFlowcontrolApiserverK8sIoV1beta1WatchFlowschemasName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5687,38 +5578,7 @@ export interface ApisInternal_apiserver_k8s_ioV1alpha1WatchStorageversions {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisInternal_apiserver_k8s_ioV1alpha1Watch {
-           // Path templating
-           // Sub-paths
-           'storageversions': ApisInternal_apiserver_k8s_ioV1alpha1WatchStorageversions
-           'storageversion': ApisInternal_apiserver_k8s_ioV1alpha1WatchStorageversions
-           // Calls
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisInternal_apiserver_k8s_ioV1alpha1 {
-           // Path templating
-           // Sub-paths
-           'storageversions': ApisInternal_apiserver_k8s_ioV1alpha1Storageversions
-           'storageversion': ApisInternal_apiserver_k8s_ioV1alpha1Storageversions
-           'watch': ApisInternal_apiserver_k8s_ioV1alpha1Watch
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisInternal_apiserver_k8s_io {
-           // Path templating
-           // Sub-paths
-           'v1alpha1': ApisInternal_apiserver_k8s_ioV1alpha1
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisNode_k8s_ioV1WatchRuntimeclassesName {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1WatchPrioritylevelconfigurationsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5727,9 +5587,9 @@ export interface ApisNode_k8s_ioV1WatchRuntimeclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1WatchRuntimeclasses {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1WatchPrioritylevelconfigurations {
            // Path templating
-           (name: string): ApisNode_k8s_ioV1WatchRuntimeclassesName
+           (name: string): ApisFlowcontrolApiserverK8sIoV1beta1WatchPrioritylevelconfigurationsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5737,18 +5597,56 @@ export interface ApisNode_k8s_ioV1WatchRuntimeclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1Watch {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1Watch {
            // Path templating
            // Sub-paths
-           'runtimeclasses': ApisNode_k8s_ioV1WatchRuntimeclasses
-           'runtimeclasse': ApisNode_k8s_ioV1WatchRuntimeclasses
+           'flowschemas': ApisFlowcontrolApiserverK8sIoV1beta1WatchFlowschemas
+           'flowschema': ApisFlowcontrolApiserverK8sIoV1beta1WatchFlowschemas
+           'prioritylevelconfigurations': ApisFlowcontrolApiserverK8sIoV1beta1WatchPrioritylevelconfigurations
+           'prioritylevelconfiguration': ApisFlowcontrolApiserverK8sIoV1beta1WatchPrioritylevelconfigurations
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1RuntimeclassesName {
+export interface ApisFlowcontrolApiserverK8sIoV1beta1 {
            // Path templating
            // Sub-paths
+           'flowschemas': ApisFlowcontrolApiserverK8sIoV1beta1Flowschemas
+           'flowschema': ApisFlowcontrolApiserverK8sIoV1beta1Flowschemas
+           'prioritylevelconfigurations': ApisFlowcontrolApiserverK8sIoV1beta1Prioritylevelconfigurations
+           'prioritylevelconfiguration': ApisFlowcontrolApiserverK8sIoV1beta1Prioritylevelconfigurations
+           'watch': ApisFlowcontrolApiserverK8sIoV1beta1Watch
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisFlowcontrolApiserverK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1beta1': ApisFlowcontrolApiserverK8sIoV1beta1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisInternalApiserverK8sIoV1alpha1StorageversionsNameStatus {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           patch(options ?: any): any
+           put(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisInternalApiserverK8sIoV1alpha1StorageversionsName {
+           // Path templating
+           // Sub-paths
+           'status': ApisInternalApiserverK8sIoV1alpha1StorageversionsNameStatus
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -5758,9 +5656,9 @@ export interface ApisNode_k8s_ioV1RuntimeclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1Runtimeclasses {
+export interface ApisInternalApiserverK8sIoV1alpha1Storageversions {
            // Path templating
-           (name: string): ApisNode_k8s_ioV1RuntimeclassesName
+           (name: string): ApisInternalApiserverK8sIoV1alpha1StorageversionsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5770,19 +5668,7 @@ export interface ApisNode_k8s_ioV1Runtimeclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1 {
-           // Path templating
-           // Sub-paths
-           'watch': ApisNode_k8s_ioV1Watch
-           'runtimeclasses': ApisNode_k8s_ioV1Runtimeclasses
-           'runtimeclasse': ApisNode_k8s_ioV1Runtimeclasses
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisNode_k8s_ioV1alpha1WatchRuntimeclassesName {
+export interface ApisInternalApiserverK8sIoV1alpha1WatchStorageversionsName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5791,9 +5677,9 @@ export interface ApisNode_k8s_ioV1alpha1WatchRuntimeclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1alpha1WatchRuntimeclasses {
+export interface ApisInternalApiserverK8sIoV1alpha1WatchStorageversions {
            // Path templating
-           (name: string): ApisNode_k8s_ioV1alpha1WatchRuntimeclassesName
+           (name: string): ApisInternalApiserverK8sIoV1alpha1WatchStorageversionsName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5801,16 +5687,66 @@ export interface ApisNode_k8s_ioV1alpha1WatchRuntimeclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1alpha1Watch {
+export interface ApisInternalApiserverK8sIoV1alpha1Watch {
            // Path templating
            // Sub-paths
-           'runtimeclasses': ApisNode_k8s_ioV1alpha1WatchRuntimeclasses
-           'runtimeclasse': ApisNode_k8s_ioV1alpha1WatchRuntimeclasses
+           'storageversions': ApisInternalApiserverK8sIoV1alpha1WatchStorageversions
+           'storageversion': ApisInternalApiserverK8sIoV1alpha1WatchStorageversions
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1alpha1RuntimeclassesName {
+export interface ApisInternalApiserverK8sIoV1alpha1 {
+           // Path templating
+           // Sub-paths
+           'storageversions': ApisInternalApiserverK8sIoV1alpha1Storageversions
+           'storageversion': ApisInternalApiserverK8sIoV1alpha1Storageversions
+           'watch': ApisInternalApiserverK8sIoV1alpha1Watch
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisInternalApiserverK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1alpha1': ApisInternalApiserverK8sIoV1alpha1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNodeK8sIoV1WatchRuntimeclassesName {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNodeK8sIoV1WatchRuntimeclasses {
+           // Path templating
+           (name: string): ApisNodeK8sIoV1WatchRuntimeclassesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNodeK8sIoV1Watch {
+           // Path templating
+           // Sub-paths
+           'runtimeclasses': ApisNodeK8sIoV1WatchRuntimeclasses
+           'runtimeclasse': ApisNodeK8sIoV1WatchRuntimeclasses
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNodeK8sIoV1RuntimeclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5822,9 +5758,9 @@ export interface ApisNode_k8s_ioV1alpha1RuntimeclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1alpha1Runtimeclasses {
+export interface ApisNodeK8sIoV1Runtimeclasses {
            // Path templating
-           (name: string): ApisNode_k8s_ioV1alpha1RuntimeclassesName
+           (name: string): ApisNodeK8sIoV1RuntimeclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5834,30 +5770,20 @@ export interface ApisNode_k8s_ioV1alpha1Runtimeclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1alpha1 {
+export interface ApisNodeK8sIoV1 {
            // Path templating
            // Sub-paths
-           'watch': ApisNode_k8s_ioV1alpha1Watch
-           'runtimeclasses': ApisNode_k8s_ioV1alpha1Runtimeclasses
-           'runtimeclasse': ApisNode_k8s_ioV1alpha1Runtimeclasses
+           'watch': ApisNodeK8sIoV1Watch
+           'runtimeclasses': ApisNodeK8sIoV1Runtimeclasses
+           'runtimeclasse': ApisNodeK8sIoV1Runtimeclasses
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1beta1WatchRuntimeclassesName {
+export interface ApisNodeK8sIoV1alpha1WatchRuntimeclassesName {
            // Path templating
-           // Sub-paths
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisNode_k8s_ioV1beta1WatchRuntimeclasses {
-           // Path templating
-           (name: string): ApisNode_k8s_ioV1beta1WatchRuntimeclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5865,16 +5791,26 @@ export interface ApisNode_k8s_ioV1beta1WatchRuntimeclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1beta1Watch {
+export interface ApisNodeK8sIoV1alpha1WatchRuntimeclasses {
+           // Path templating
+           (name: string): ApisNodeK8sIoV1alpha1WatchRuntimeclassesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisNodeK8sIoV1alpha1Watch {
            // Path templating
            // Sub-paths
-           'runtimeclasses': ApisNode_k8s_ioV1beta1WatchRuntimeclasses
-           'runtimeclasse': ApisNode_k8s_ioV1beta1WatchRuntimeclasses
+           'runtimeclasses': ApisNodeK8sIoV1alpha1WatchRuntimeclasses
+           'runtimeclasse': ApisNodeK8sIoV1alpha1WatchRuntimeclasses
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1beta1RuntimeclassesName {
+export interface ApisNodeK8sIoV1alpha1RuntimeclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5886,9 +5822,9 @@ export interface ApisNode_k8s_ioV1beta1RuntimeclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1beta1Runtimeclasses {
+export interface ApisNodeK8sIoV1alpha1Runtimeclasses {
            // Path templating
-           (name: string): ApisNode_k8s_ioV1beta1RuntimeclassesName
+           (name: string): ApisNodeK8sIoV1alpha1RuntimeclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5898,31 +5834,19 @@ export interface ApisNode_k8s_ioV1beta1Runtimeclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_ioV1beta1 {
+export interface ApisNodeK8sIoV1alpha1 {
            // Path templating
            // Sub-paths
-           'watch': ApisNode_k8s_ioV1beta1Watch
-           'runtimeclasses': ApisNode_k8s_ioV1beta1Runtimeclasses
-           'runtimeclasse': ApisNode_k8s_ioV1beta1Runtimeclasses
+           'watch': ApisNodeK8sIoV1alpha1Watch
+           'runtimeclasses': ApisNodeK8sIoV1alpha1Runtimeclasses
+           'runtimeclasse': ApisNodeK8sIoV1alpha1Runtimeclasses
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisNode_k8s_io {
-           // Path templating
-           // Sub-paths
-           'v1': ApisNode_k8s_ioV1
-           'v1alpha1': ApisNode_k8s_ioV1alpha1
-           'v1beta1': ApisNode_k8s_ioV1beta1
-           // Calls
-           get(options ?: any): any
-           getStream(options ?: any): any
-           addCustomResourceDefinition(schema: object): void
-       }
-
-export interface ApisScheduling_k8s_ioV1WatchPriorityclassesName {
+export interface ApisNodeK8sIoV1beta1WatchRuntimeclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5931,9 +5855,9 @@ export interface ApisScheduling_k8s_ioV1WatchPriorityclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1WatchPriorityclasses {
+export interface ApisNodeK8sIoV1beta1WatchRuntimeclasses {
            // Path templating
-           (name: string): ApisScheduling_k8s_ioV1WatchPriorityclassesName
+           (name: string): ApisNodeK8sIoV1beta1WatchRuntimeclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5941,16 +5865,16 @@ export interface ApisScheduling_k8s_ioV1WatchPriorityclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1Watch {
+export interface ApisNodeK8sIoV1beta1Watch {
            // Path templating
            // Sub-paths
-           'priorityclasses': ApisScheduling_k8s_ioV1WatchPriorityclasses
-           'priorityclasse': ApisScheduling_k8s_ioV1WatchPriorityclasses
+           'runtimeclasses': ApisNodeK8sIoV1beta1WatchRuntimeclasses
+           'runtimeclasse': ApisNodeK8sIoV1beta1WatchRuntimeclasses
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1PriorityclassesName {
+export interface ApisNodeK8sIoV1beta1RuntimeclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5962,9 +5886,9 @@ export interface ApisScheduling_k8s_ioV1PriorityclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1Priorityclasses {
+export interface ApisNodeK8sIoV1beta1Runtimeclasses {
            // Path templating
-           (name: string): ApisScheduling_k8s_ioV1PriorityclassesName
+           (name: string): ApisNodeK8sIoV1beta1RuntimeclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -5974,19 +5898,31 @@ export interface ApisScheduling_k8s_ioV1Priorityclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1 {
+export interface ApisNodeK8sIoV1beta1 {
            // Path templating
            // Sub-paths
-           'watch': ApisScheduling_k8s_ioV1Watch
-           'priorityclasses': ApisScheduling_k8s_ioV1Priorityclasses
-           'priorityclasse': ApisScheduling_k8s_ioV1Priorityclasses
+           'watch': ApisNodeK8sIoV1beta1Watch
+           'runtimeclasses': ApisNodeK8sIoV1beta1Runtimeclasses
+           'runtimeclasse': ApisNodeK8sIoV1beta1Runtimeclasses
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1alpha1WatchPriorityclassesName {
+export interface ApisNodeK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1': ApisNodeK8sIoV1
+           'v1alpha1': ApisNodeK8sIoV1alpha1
+           'v1beta1': ApisNodeK8sIoV1beta1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisSchedulingK8sIoV1WatchPriorityclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -5995,9 +5931,9 @@ export interface ApisScheduling_k8s_ioV1alpha1WatchPriorityclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1alpha1WatchPriorityclasses {
+export interface ApisSchedulingK8sIoV1WatchPriorityclasses {
            // Path templating
-           (name: string): ApisScheduling_k8s_ioV1alpha1WatchPriorityclassesName
+           (name: string): ApisSchedulingK8sIoV1WatchPriorityclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -6005,16 +5941,16 @@ export interface ApisScheduling_k8s_ioV1alpha1WatchPriorityclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1alpha1Watch {
+export interface ApisSchedulingK8sIoV1Watch {
            // Path templating
            // Sub-paths
-           'priorityclasses': ApisScheduling_k8s_ioV1alpha1WatchPriorityclasses
-           'priorityclasse': ApisScheduling_k8s_ioV1alpha1WatchPriorityclasses
+           'priorityclasses': ApisSchedulingK8sIoV1WatchPriorityclasses
+           'priorityclasse': ApisSchedulingK8sIoV1WatchPriorityclasses
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1alpha1PriorityclassesName {
+export interface ApisSchedulingK8sIoV1PriorityclassesName {
            // Path templating
            // Sub-paths
            // Calls
@@ -6026,9 +5962,9 @@ export interface ApisScheduling_k8s_ioV1alpha1PriorityclassesName {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1alpha1Priorityclasses {
+export interface ApisSchedulingK8sIoV1Priorityclasses {
            // Path templating
-           (name: string): ApisScheduling_k8s_ioV1alpha1PriorityclassesName
+           (name: string): ApisSchedulingK8sIoV1PriorityclassesName
            // Sub-paths
            // Calls
            get(options ?: any): any
@@ -6038,30 +5974,94 @@ export interface ApisScheduling_k8s_ioV1alpha1Priorityclasses {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_ioV1alpha1 {
+export interface ApisSchedulingK8sIoV1 {
            // Path templating
            // Sub-paths
-           'watch': ApisScheduling_k8s_ioV1alpha1Watch
-           'priorityclasses': ApisScheduling_k8s_ioV1alpha1Priorityclasses
-           'priorityclasse': ApisScheduling_k8s_ioV1alpha1Priorityclasses
+           'watch': ApisSchedulingK8sIoV1Watch
+           'priorityclasses': ApisSchedulingK8sIoV1Priorityclasses
+           'priorityclasse': ApisSchedulingK8sIoV1Priorityclasses
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisScheduling_k8s_io {
+export interface ApisSchedulingK8sIoV1alpha1WatchPriorityclassesName {
            // Path templating
            // Sub-paths
-           'v1': ApisScheduling_k8s_ioV1
-           'v1alpha1': ApisScheduling_k8s_ioV1alpha1
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthentication_k8s_ioV1Tokenreviews {
+export interface ApisSchedulingK8sIoV1alpha1WatchPriorityclasses {
+           // Path templating
+           (name: string): ApisSchedulingK8sIoV1alpha1WatchPriorityclassesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisSchedulingK8sIoV1alpha1Watch {
+           // Path templating
+           // Sub-paths
+           'priorityclasses': ApisSchedulingK8sIoV1alpha1WatchPriorityclasses
+           'priorityclasse': ApisSchedulingK8sIoV1alpha1WatchPriorityclasses
+           // Calls
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisSchedulingK8sIoV1alpha1PriorityclassesName {
+           // Path templating
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           delete(options ?: any): any
+           patch(options ?: any): any
+           put(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisSchedulingK8sIoV1alpha1Priorityclasses {
+           // Path templating
+           (name: string): ApisSchedulingK8sIoV1alpha1PriorityclassesName
+           // Sub-paths
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           delete(options ?: any): any
+           post(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisSchedulingK8sIoV1alpha1 {
+           // Path templating
+           // Sub-paths
+           'watch': ApisSchedulingK8sIoV1alpha1Watch
+           'priorityclasses': ApisSchedulingK8sIoV1alpha1Priorityclasses
+           'priorityclasse': ApisSchedulingK8sIoV1alpha1Priorityclasses
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisSchedulingK8sIo {
+           // Path templating
+           // Sub-paths
+           'v1': ApisSchedulingK8sIoV1
+           'v1alpha1': ApisSchedulingK8sIoV1alpha1
+           // Calls
+           get(options ?: any): any
+           getStream(options ?: any): any
+           addCustomResourceDefinition(schema: object): void
+       }
+
+export interface ApisAuthenticationK8sIoV1Tokenreviews {
            // Path templating
            // Sub-paths
            // Calls
@@ -6069,21 +6069,21 @@ export interface ApisAuthentication_k8s_ioV1Tokenreviews {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthentication_k8s_ioV1 {
+export interface ApisAuthenticationK8sIoV1 {
            // Path templating
            // Sub-paths
-           'tokenreviews': ApisAuthentication_k8s_ioV1Tokenreviews
-           'tokenreview': ApisAuthentication_k8s_ioV1Tokenreviews
+           'tokenreviews': ApisAuthenticationK8sIoV1Tokenreviews
+           'tokenreview': ApisAuthenticationK8sIoV1Tokenreviews
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface ApisAuthentication_k8s_io {
+export interface ApisAuthenticationK8sIo {
            // Path templating
            // Sub-paths
-           'v1': ApisAuthentication_k8s_ioV1
+           'v1': ApisAuthenticationK8sIoV1
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -6097,23 +6097,23 @@ export interface Apis {
            'app': ApisApps
            'autoscaling': ApisAutoscaling
            'batch': ApisBatch
-           'coordination.k8s.io': ApisCoordination_k8s_io
-           'discovery.k8s.io': ApisDiscovery_k8s_io
-           'events.k8s.io': ApisEvents_k8s_io
-           'networking.k8s.io': ApisNetworking_k8s_io
+           'coordination.k8s.io': ApisCoordinationK8sIo
+           'discovery.k8s.io': ApisDiscoveryK8sIo
+           'events.k8s.io': ApisEventsK8sIo
+           'networking.k8s.io': ApisNetworkingK8sIo
            'policy': ApisPolicy
-           'rbac.authorization.k8s.io': ApisRbac_authorization_k8s_io
-           'storage.k8s.io': ApisStorage_k8s_io
-           'admissionregistration.k8s.io': ApisAdmissionregistration_k8s_io
-           'apiextensions.k8s.io': ApisApiextensions_k8s_io
-           'apiregistration.k8s.io': ApisApiregistration_k8s_io
-           'authorization.k8s.io': ApisAuthorization_k8s_io
-           'certificates.k8s.io': ApisCertificates_k8s_io
-           'flowcontrol.apiserver.k8s.io': ApisFlowcontrol_apiserver_k8s_io
-           'internal.apiserver.k8s.io': ApisInternal_apiserver_k8s_io
-           'node.k8s.io': ApisNode_k8s_io
-           'scheduling.k8s.io': ApisScheduling_k8s_io
-           'authentication.k8s.io': ApisAuthentication_k8s_io
+           'rbac.authorization.k8s.io': ApisRbacAuthorizationK8sIo
+           'storage.k8s.io': ApisStorageK8sIo
+           'admissionregistration.k8s.io': ApisAdmissionregistrationK8sIo
+           'apiextensions.k8s.io': ApisApiextensionsK8sIo
+           'apiregistration.k8s.io': ApisApiregistrationK8sIo
+           'authorization.k8s.io': ApisAuthorizationK8sIo
+           'certificates.k8s.io': ApisCertificatesK8sIo
+           'flowcontrol.apiserver.k8s.io': ApisFlowcontrolApiserverK8sIo
+           'internal.apiserver.k8s.io': ApisInternalApiserverK8sIo
+           'node.k8s.io': ApisNodeK8sIo
+           'scheduling.k8s.io': ApisSchedulingK8sIo
+           'authentication.k8s.io': ApisAuthenticationK8sIo
            // Calls
            get(options ?: any): any
            getStream(options ?: any): any
@@ -6146,7 +6146,7 @@ export interface Openid {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface _well-knownOpenid-configuration {
+export interface WellKnownOpenidConfiguration {
            // Path templating
            // Sub-paths
            // Calls
@@ -6155,10 +6155,10 @@ export interface _well-knownOpenid-configuration {
            addCustomResourceDefinition(schema: object): void
        }
 
-export interface _well-known {
+export interface WellKnown {
            // Path templating
            // Sub-paths
-           'openid-configuration': _well-knownOpenid-configuration
+           'openid-configuration': WellKnownOpenidConfiguration
            // Calls
            addCustomResourceDefinition(schema: object): void
        }
@@ -6197,7 +6197,7 @@ export interface ApiRoot {
            'api': Api
            'apis': Apis
            'openid': Openid
-           '.well-known': _well-known
+           '.well-known': WellKnown
            'logs': Logs
            'log': Logs
            'version': Version
