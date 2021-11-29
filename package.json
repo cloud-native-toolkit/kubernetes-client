@@ -1,6 +1,6 @@
 {
   "name": "@cloudnativetoolkit/kubernetes-client",
-  "version": "9.1.1",
+  "version": "9.1.2",
   "description": "Simplified Kubernetes API client.",
   "main": "lib/index.js",
   "types": "./typings/index.d.ts",
